@@ -1,0 +1,172 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="JSHint" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ourVersions">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="3.10" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="125">
+            <item index="0" class="java.lang.String" itemvalue="email-validator" />
+            <item index="1" class="java.lang.String" itemvalue="dnspython" />
+            <item index="2" class="java.lang.String" itemvalue="python-multipart" />
+            <item index="3" class="java.lang.String" itemvalue="bcrypt" />
+            <item index="4" class="java.lang.String" itemvalue="httpx" />
+            <item index="5" class="java.lang.String" itemvalue="gitdb" />
+            <item index="6" class="java.lang.String" itemvalue="rfc3986" />
+            <item index="7" class="java.lang.String" itemvalue="markdown-it-py" />
+            <item index="8" class="java.lang.String" itemvalue="markupsafe" />
+            <item index="9" class="java.lang.String" itemvalue="redis" />
+            <item index="10" class="java.lang.String" itemvalue="flake8-commas" />
+            <item index="11" class="java.lang.String" itemvalue="flake8-quotes" />
+            <item index="12" class="java.lang.String" itemvalue="tortoise-orm" />
+            <item index="13" class="java.lang.String" itemvalue="mccabe" />
+            <item index="14" class="java.lang.String" itemvalue="starlette" />
+            <item index="15" class="java.lang.String" itemvalue="flake8-debugger" />
+            <item index="16" class="java.lang.String" itemvalue="docutils" />
+            <item index="17" class="java.lang.String" itemvalue="gitpython" />
+            <item index="18" class="java.lang.String" itemvalue="uvicorn" />
+            <item index="19" class="java.lang.String" itemvalue="passlib" />
+            <item index="20" class="java.lang.String" itemvalue="pydantic" />
+            <item index="21" class="java.lang.String" itemvalue="asyncpg" />
+            <item index="22" class="java.lang.String" itemvalue="pep8-naming" />
+            <item index="23" class="java.lang.String" itemvalue="typing-extensions" />
+            <item index="24" class="java.lang.String" itemvalue="loguru" />
+            <item index="25" class="java.lang.String" itemvalue="click" />
+            <item index="26" class="java.lang.String" itemvalue="attrs" />
+            <item index="27" class="java.lang.String" itemvalue="hiredis" />
+            <item index="28" class="java.lang.String" itemvalue="pyyaml" />
+            <item index="29" class="java.lang.String" itemvalue="boto3" />
+            <item index="30" class="java.lang.String" itemvalue="aioredis" />
+            <item index="31" class="java.lang.String" itemvalue="platformdirs" />
+            <item index="32" class="java.lang.String" itemvalue="wemake-python-styleguide" />
+            <item index="33" class="java.lang.String" itemvalue="pytest-env" />
+            <item index="34" class="java.lang.String" itemvalue="pydocstyle" />
+            <item index="35" class="java.lang.String" itemvalue="httpcore" />
+            <item index="36" class="java.lang.String" itemvalue="idna" />
+            <item index="37" class="java.lang.String" itemvalue="rsa" />
+            <item index="38" class="java.lang.String" itemvalue="smmap" />
+            <item index="39" class="java.lang.String" itemvalue="pluggy" />
+            <item index="40" class="java.lang.String" itemvalue="flake8-polyfill" />
+            <item index="41" class="java.lang.String" itemvalue="aerich" />
+            <item index="42" class="java.lang.String" itemvalue="pycodestyle" />
+            <item index="43" class="java.lang.String" itemvalue="asynctest" />
+            <item index="44" class="java.lang.String" itemvalue="pyasn1" />
+            <item index="45" class="java.lang.String" itemvalue="sniffio" />
+            <item index="46" class="java.lang.String" itemvalue="pytzdata" />
+            <item index="47" class="java.lang.String" itemvalue="mdurl" />
+            <item index="48" class="java.lang.String" itemvalue="nest-asyncio" />
+            <item index="49" class="java.lang.String" itemvalue="flake8-comprehensions" />
+            <item index="50" class="java.lang.String" itemvalue="websockets" />
+            <item index="51" class="java.lang.String" itemvalue="pygments" />
+            <item index="52" class="java.lang.String" itemvalue="watchfiles" />
+            <item index="53" class="java.lang.String" itemvalue="flake8-docstrings" />
+            <item index="54" class="java.lang.String" itemvalue="botocore" />
+            <item index="55" class="java.lang.String" itemvalue="iso8601" />
+            <item index="56" class="java.lang.String" itemvalue="aiofiles" />
+            <item index="57" class="java.lang.String" itemvalue="black" />
+            <item index="58" class="java.lang.String" itemvalue="flake8-broken-line" />
+            <item index="59" class="java.lang.String" itemvalue="astor" />
+            <item index="60" class="java.lang.String" itemvalue="dictdiffer" />
+            <item index="61" class="java.lang.String" itemvalue="sortedcontainers" />
+            <item index="62" class="java.lang.String" itemvalue="babel" />
+            <item index="63" class="java.lang.String" itemvalue="multidict" />
+            <item index="64" class="java.lang.String" itemvalue="isort" />
+            <item index="65" class="java.lang.String" itemvalue="yarl" />
+            <item index="66" class="java.lang.String" itemvalue="pytz" />
+            <item index="67" class="java.lang.String" itemvalue="config" />
+            <item index="68" class="java.lang.String" itemvalue="ujson" />
+            <item index="69" class="java.lang.String" itemvalue="mypy" />
+            <item index="70" class="java.lang.String" itemvalue="python-dateutil" />
+            <item index="71" class="java.lang.String" itemvalue="pre-commit" />
+            <item index="72" class="java.lang.String" itemvalue="python-dotenv" />
+            <item index="73" class="java.lang.String" itemvalue="h11" />
+            <item index="74" class="java.lang.String" itemvalue="setuptools" />
+            <item index="75" class="java.lang.String" itemvalue="flake8-bugbear" />
+            <item index="76" class="java.lang.String" itemvalue="httptools" />
+            <item index="77" class="java.lang.String" itemvalue="snowballstemmer" />
+            <item index="78" class="java.lang.String" itemvalue="filelock" />
+            <item index="79" class="java.lang.String" itemvalue="certifi" />
+            <item index="80" class="java.lang.String" itemvalue="anyio" />
+            <item index="81" class="java.lang.String" itemvalue="pendulum" />
+            <item index="82" class="java.lang.String" itemvalue="uvloop" />
+            <item index="83" class="java.lang.String" itemvalue="flake8-string-format" />
+            <item index="84" class="java.lang.String" itemvalue="flake8-eradicate" />
+            <item index="85" class="java.lang.String" itemvalue="nodeenv" />
+            <item index="86" class="java.lang.String" itemvalue="iniconfig" />
+            <item index="87" class="java.lang.String" itemvalue="jinja2" />
+            <item index="88" class="java.lang.String" itemvalue="flake8-isort" />
+            <item index="89" class="java.lang.String" itemvalue="eradicate" />
+            <item index="90" class="java.lang.String" itemvalue="flake8-bandit" />
+            <item index="91" class="java.lang.String" itemvalue="python-config" />
+            <item index="92" class="java.lang.String" itemvalue="fastapi-admin" />
+            <item index="93" class="java.lang.String" itemvalue="virtualenv" />
+            <item index="94" class="java.lang.String" itemvalue="distlib" />
+            <item index="95" class="java.lang.String" itemvalue="cfgv" />
+            <item index="96" class="java.lang.String" itemvalue="pbr" />
+            <item index="97" class="java.lang.String" itemvalue="pathspec" />
+            <item index="98" class="java.lang.String" itemvalue="autoflake" />
+            <item index="99" class="java.lang.String" itemvalue="async-timeout" />
+            <item index="100" class="java.lang.String" itemvalue="mypy-extensions" />
+            <item index="101" class="java.lang.String" itemvalue="flake8" />
+            <item index="102" class="java.lang.String" itemvalue="restructuredtext-lint" />
+            <item index="103" class="java.lang.String" itemvalue="pypika-tortoise" />
+            <item index="104" class="java.lang.String" itemvalue="tomlkit" />
+            <item index="105" class="java.lang.String" itemvalue="pytest-cov" />
+            <item index="106" class="java.lang.String" itemvalue="aiosqlite" />
+            <item index="107" class="java.lang.String" itemvalue="urllib3" />
+            <item index="108" class="java.lang.String" itemvalue="python-jose" />
+            <item index="109" class="java.lang.String" itemvalue="coverage" />
+            <item index="110" class="java.lang.String" itemvalue="six" />
+            <item index="111" class="java.lang.String" itemvalue="identify" />
+            <item index="112" class="java.lang.String" itemvalue="pyflakes" />
+            <item index="113" class="java.lang.String" itemvalue="stevedore" />
+            <item index="114" class="java.lang.String" itemvalue="bandit" />
+            <item index="115" class="java.lang.String" itemvalue="pytest" />
+            <item index="116" class="java.lang.String" itemvalue="fakeredis" />
+            <item index="117" class="java.lang.String" itemvalue="ecdsa" />
+            <item index="118" class="java.lang.String" itemvalue="rich" />
+            <item index="119" class="java.lang.String" itemvalue="packaging" />
+            <item index="120" class="java.lang.String" itemvalue="darglint" />
+            <item index="121" class="java.lang.String" itemvalue="jmespath" />
+            <item index="122" class="java.lang.String" itemvalue="fastapi" />
+            <item index="123" class="java.lang.String" itemvalue="s3transfer" />
+            <item index="124" class="java.lang.String" itemvalue="flake8-rst-docstrings" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="false" level="WEAK WARNING" enabled_by_default="false">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E266" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N812" />
+          <option value="N803" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="list.split" />
+          <option value="str.__truediv__" />
+          <option value="process_type" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

@@ -1,9 +1,9 @@
-name = "Hugoplate"
+name = "Geoweaver"
 license = "MIT"
 licenselink = "https://github.com/zeon-studio/hugoplate/blob/main/LICENSE"
-description = "Hugoplate is a free starter template built with Hugo, and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
+description = "A web system to allow users to automatically record history and manage complicated scientific workflows in web browsers involving the online spatial data facilities, high-performance computation platforms, and open-source libraries."
 homepage = "https://github.com/zeon-studio/hugoplate"
-demosite = "https://zeon.studio/preview?project=hugoplate"
+demosite = "https://geobrain.csiss.gmu.edu/Geoweaver"
 min_version = "0.118.2"
 
 tags = [
@@ -23,16 +23,16 @@ tags = [
 features = [
   "Multi-Authors",
   "Search",
-  "Multilingual",
+#  "Multilingual",
   "Dark Mode",
-  "Taxonomies",
+#  "Taxonomies",
 ]
 
 [author]
-name = "Zeon Studio"
-homepage = "https://zeon.studio"
+name = "Ziheng Sun"
+homepage = "https://zihengsun.github.io/"
 
 [original]
-author = "Zeon Studio"
-homepage = "https://zeon.studio"
-repo = "https://github.com/zeon-studio/themeplate"
+name = "Ziheng Sun"
+homepage = "https://zihengsun.github.io/"
+repo = "https://github.com/zihengsun"
