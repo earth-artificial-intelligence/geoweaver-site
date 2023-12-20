@@ -1,7 +1,7 @@
 ---
 # Banner
 banner:
-  title: "Goweaver"
+  title: "Geoweaver"
   content: "An open-source, in-browser tool for simplifying data processing workflows with high-performance server support, featuring code history and workflow orchestration."
   image: "/images/banner.png"
   button:
@@ -11,9 +11,9 @@ banner:
 
 # Features
 features:
-  - title: "About Geoweaver"
+  - title: "What is Geoweaver?"
     image: "/images/service-1.png"
-    content: "Geoweaver is an open-source, in-browser software designed for simplifying the composition and execution of data processing workflows. It efficiently leverages high-performance servers for workflow execution and includes features such as code history and workflow orchestration, easing the creation and maintenance of workflows. Additionally, Geoweaver serves as an all-in-one solution, providing functionality for server management, code repository, workflow orchestration, and history recording. Accessible from both local and remote machines, Geoweaver offers a versatile and seamless experience for users engaged in data processing workflows.
+    content: "Geoweaver is an open-source, in-browser software designed for simplifying the composition and execution of data processing workflows. It efficiently leverages high-performance servers for workflow execution and includes features such as code history and workflow orchestration, easing the creation and maintenance of workflows. 
 "
     # bulletpoints:
     #   - "10+ Pre-build pages"
@@ -27,9 +27,9 @@ features:
     #   label: "Get Started Now"
     #   link: "#"
 
-  - title: "About PyGeoweaver"
+  - title: "PyGeoweaver"
     image: "/images/service-2.png"
-    content: "PyGeoweaver is a Python library seamlessly integrated with the Geoweaver workflow management system. It enables users to interact with Geoweaver workflows programmatically, offering full Geoweaver functionality, including workflow orchestration, code history/versioning, and server management. With a focus on Python integration, PyGeoweaver serves as a versatile tool for automating complex data processing tasks, integrating with the Python ecosystem, and developing custom workflows."
+    content: "PyGeoweaver is a Python wrapper of Geoweaver workflow management system. It enables users to interact with Geoweaver workflows programmatically, offering full Geoweaver functionality, including workflow orchestration, code history/versioning, and server management."
     # bulletpoints:
     #   - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
     #   - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
