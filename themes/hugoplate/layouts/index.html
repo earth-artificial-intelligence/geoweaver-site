@@ -135,5 +135,32 @@
       </section>
     {{ end }}
   {{ end }}
+
+  <!-- Examples -->
+  {{ with site.GetPage "sections/examples" }}
+    {{if .Params.enable}}
+      <section class="section">
+          <div class="container">
+            <div class="mx-auto text-center md:col-10 lg:col-8 xl:col-6 mb-12">
+              <h2 class="mb-4">
+                {{ .Title | markdownify }}
+              </h2>
+            </div>
+
+            <div class="mt-2 grid grid-rows-2 grid-flow-col gap-4">
+              <p>test 1</p>
+              <p>test 1</p>
+              <p>test 1</p>
+              <p>test 1</p>
+              <p>test 1</p>
+              <p>test 1</p>
+              <p>test 1</p>
+              <p>test 1</p>
+            </div>
+
+          </div>
+      </section>
+    {{ end }}
+  {{ end }}
   <!-- /Testimonials -->
 {{ end }}
