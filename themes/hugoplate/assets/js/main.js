@@ -1,3 +1,4 @@
+
 // main script
 (function () {
   "use strict";
@@ -34,3 +35,17 @@
     },
   });
 })();
+
+const landingPageText = "Build workflows that scale";
+let index = 0;
+
+function typeWriter() {
+  "use strict";
+  if (index < landingPageText.length) {
+    document.getElementById("landing-page-text").innerHTML += landingPageText.charAt(index);
+    index++;
+    setTimeout(typeWriter, 50); // Adjust speed here
+  }
+}
+
+typeWriter();

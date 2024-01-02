@@ -1,8 +1,8 @@
 ---
 enable: true
-title: "Ready to build your next project with Hugo?"
+title: "Ready to build your next project with Geoweaver?"
 image: "/images/call-to-action.png"
-description: "Experience the future of web development with Hugoplate and Hugo. Build lightning-fast static sites with ease and flexibility."
+description: "An open-source, in-browser tool for simplifying data processing workflows with high-performance server support, featuring code history and workflow orchestration."
 button:
   enable: true
   label: "Get Started Now"

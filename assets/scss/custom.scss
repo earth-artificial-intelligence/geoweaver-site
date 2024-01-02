@@ -1,1 +1,17 @@
 // Add your own custom styles here
+.typewriter {
+  font-family: 'Courier New', monospace;
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+
+  .cursor {
+    display: inline-block;
+    background-color: black;
+    margin-left: -3px;
+    @keyframes blink {
+      to { visibility: hidden; }
+    }
+    animation: blink 1s steps(5, start) infinite;
+  }
+}

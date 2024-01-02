@@ -3,9 +3,13 @@
   {{ with .Params.banner }}
     <section class="section pt-14">
       <div class="container">
-        <div class="row justify-center">
-          <div class="lg:col-7 mb-8 text-center">
+        <div class="justify-center row">
+          <div class="mb-8 text-center lg:col-7">
             <h1 class="mb-4">
+              <div id="typewriter" class="overflow-hidden font-mono text-2xl whitespace-nowrap">
+                <span id="landing-page-text"></span>
+                <span class="w-1 bg-black cursor">|</span>
+              </div>
               {{ .title | markdownify }}
             </h1>
             <p class="mb-8">
@@ -14,8 +18,8 @@
             {{ with .button }}
               {{ if .enable }}
                 <a class="btn btn-primary" href="{{ .link | absURL }}">
-                  {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
+                    {{ .label }}
+                  <i class="pl-2 fa fa-arrow-right"></i>
                 </a>
               {{ end }}
             {{ end }}
@@ -29,11 +33,14 @@
   {{ end }}
   <!-- /Banner -->
 
+  <!-- Features & Capabilities -->
+  {{ with site.GetPage "sections/" }}
+
   <!-- Features -->
   {{ range $i, $e:= .Params.features }}
     <section class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}">
       <div class="container">
-        <div class="row items-center justify-between">
+        <div class="items-center justify-between row">
           <div
             class="mb:md-0 {{ if not (modBool $i 2) }}
               md:order-2
@@ -52,7 +59,7 @@
             </p>
             <ul>
               {{ range .bulletpoints }}
-                <li class="relative mb-4 pl-6">
+                <li class="relative pl-6 mb-4">
                   <i class="fa fa-check absolute left-0 top-1.5"></i>
                   {{ . | markdownify }}
                 </li>
@@ -60,9 +67,9 @@
             </ul>
             {{ with .button }}
               {{ if .enable }}
-                <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
+                <a class="mt-6 btn btn-primary" href="{{ .link | absURL }}">
                   {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
+                  <i class="pl-2 fa fa-arrow-right"></i>
                 </a>
               {{ end }}
             {{ end }}
@@ -79,7 +86,7 @@
       <section class="section">
         <div class="container">
           <div class="row">
-            <div class="md:col-10 lg:col-8 xl:col-6 mx-auto mb-12 text-center">
+            <div class="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
               <h2 class="mb-4">
                 {{ .Title | markdownify }}
               </h2>
@@ -93,7 +100,7 @@
                   {{ range .Params.testimonials }}
                     <div class="swiper-slide">
                       <div
-                        class="bg-theme-light dark:bg-darkmode-theme-light rounded-lg px-7 py-10">
+                        class="py-10 rounded-lg bg-theme-light dark:bg-darkmode-theme-light px-7">
                         <div class="text-dark dark:text-white">
                           <svg
                             width="33"
@@ -109,12 +116,12 @@
                         <blockquote class="mt-8">
                           {{ .content | markdownify }}
                         </blockquote>
-                        <div class="mt-11 flex items-center">
+                        <div class="flex items-center mt-11">
                           <div class="text-dark dark:text-white">
                             {{ partial "image" (dict "Src" .avatar "Size" "50x50" "Class" "rounded-full" "Alt" .name) }}
                           </div>
                           <div class="ml-4">
-                            <h3 class="h5 font-primary font-semibold">
+                            <h3 class="font-semibold h5 font-primary">
                               {{ .name }}
                             </h3>
                             <p class="text-dark dark:text-white">
@@ -127,7 +134,7 @@
                   {{ end }}
                 </div>
                 <div
-                  class="testimonial-slider-pagination mt-9 flex items-center justify-center text-center"></div>
+                  class="flex items-center justify-center text-center testimonial-slider-pagination mt-9"></div>
               </div>
             </div>
           </div>
@@ -135,32 +142,37 @@
       </section>
     {{ end }}
   {{ end }}
+  <!-- /Testimonials -->
 
   <!-- Examples -->
-  {{ with site.GetPage "sections/examples" }}
+  {{/*  {{ with site.GetPage "sections/examples" }}
     {{if .Params.enable}}
       <section class="section">
           <div class="container">
-            <div class="mx-auto text-center md:col-10 lg:col-8 xl:col-6 mb-12">
+            <div class="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
               <h2 class="mb-4">
                 {{ .Title | markdownify }}
               </h2>
             </div>
 
-            <div class="mt-2 grid grid-rows-2 grid-flow-col gap-4">
-              <p>test 1</p>
-              <p>test 1</p>
-              <p>test 1</p>
-              <p>test 1</p>
-              <p>test 1</p>
-              <p>test 1</p>
-              <p>test 1</p>
-              <p>test 1</p>
+            <div class="grid grid-flow-col grid-rows-2 gap-4 mt-2">
+              <div class="border-2 border-gray-200 rounded">
+                  <h5>Creating a workflow</h5>
+              </div>
+              <div class="border-2 border-gray-200 rounded">
+                <h5>Creating a workflow</h5>
+              </div>
+            <div class="border-2 border-gray-200 rounded">
+              <h5>Creating a workflow</h5>
+            </div>
+            <div class="border-2 border-gray-200 rounded">
+              <h5>Creating a workflow</h5>
+            </div>
             </div>
 
           </div>
       </section>
     {{ end }}
-  {{ end }}
-  <!-- /Testimonials -->
+  {{ end }}  */}}
+
 {{ end }}
