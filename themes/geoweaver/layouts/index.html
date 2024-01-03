@@ -44,12 +44,22 @@
                   {{ .Title | markdownify }}
                 </p>
               </div>
-
-              <div class='grid gap-4 grid-col-3'>
-                <div>01</div>
-                <div>01</div>
-                <div>01</div>
-                <div>01</div>
+              <div class="container mx-auto">
+                <div class='grid grid-cols-3 gap-4'>
+                  {{ range $i, $e:= .Params.features }}
+                  <div class="max-w-sm mx-auto overflow-hidden transition duration-500 ease-in-out bg-white shadow-md max-h-32 rounded-xl hover:shadow-lg hover:bg-gray-100">
+                    <div class="flex">
+                      <div class="flex-shrink-0">
+                        <img class="object-cover h-32 md:w-24" src="{{ .image | markdownify }}" alt="Image Description">
+                      </div>
+                      <div class="p-3">
+                        <h2 class="text-xl font-semibold">{{ .featureName | markdownify }}</h2>
+                        <p class="mt-1 mb-3 overflow-auto text-gray-600">{{ .featureDescription | markdownify }}</p>
+                      </div>
+                    </div>
+                  </div>
+                {{ end }}
+                </div>
               </div>
             </div>
           </section>
