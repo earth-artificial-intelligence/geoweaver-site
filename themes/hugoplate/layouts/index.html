@@ -34,7 +34,27 @@
   <!-- /Banner -->
 
   <!-- Features & Capabilities -->
-  {{ with site.GetPage "sections/" }}
+  {{ with site.GetPage "sections/features" }}
+      {{if .Params.enable}}
+          <section class='section'>
+            <div>
+              <h4 class='mx-auto mb-6 text-center '>Key Features</h4>
+              <div class="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
+                <p class="mb-4 font-bold">
+                  {{ .Title | markdownify }}
+                </p>
+              </div>
+
+              <div class='grid gap-4 grid-col-3'>
+                <div>01</div>
+                <div>01</div>
+                <div>01</div>
+                <div>01</div>
+              </div>
+            </div>
+          </section>
+      {{ end }}
+  {{ end }}
 
   <!-- Features -->
   {{ range $i, $e:= .Params.features }}
