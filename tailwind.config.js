@@ -44,6 +44,9 @@ module.exports = {
       padding: "2rem",
     },
     extend: {
+      backgroundImage: {
+        'geoweaver-theme-gradient': 'linear-gradient(to right, #303B4C 100%, #0066FF 70%)'
+      },
       colors: {
         text: theme.colors.default.text_color.default,
         light: theme.colors.default.text_color.light,
@@ -81,6 +84,7 @@ module.exports = {
       fontFamily: {
         primary: [fontPrimary, fontPrimaryType],
         secondary: [fontSecondary, fontSecondaryType],
+        'heebo': ['heebo', 'ui-serif', 'Georgia'],
       },
     },
   },
