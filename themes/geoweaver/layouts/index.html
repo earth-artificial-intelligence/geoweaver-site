@@ -2,10 +2,16 @@
   <!-- Banner -->
   {{ with .Params.banner }}
     <section class="section pt-14">
+
+      <div class='absolute right-0 top-[-170px] z-[-1]'>
+        {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "absoulte right-0" ) }}
+      </div>
+
       <h2 class='pl-48 font-mono'>Build workflows that scale</h2>
       <h1 class='pl-96 geoweaver-landing-text'>Geoweaver</h1>
       <p class='max-w-3xl pt-6 pl-48 text-justify font-heebo'>An open-source, in-browser tool for simplifying data processing workflows with high-performance server support, featuring code history and workflow orchestration.</p>
 
+      
     </section>
   {{ end }}
   <!-- /Banner -->

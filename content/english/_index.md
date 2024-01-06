@@ -3,7 +3,7 @@
 banner:
   title: "Geoweaver"
   content: "An open-source, in-browser tool for simplifying data processing workflows with high-performance server support, featuring code history and workflow orchestration."
-  image: "/images/banner.png"
+  image: "/images/landing-page/geoweaver-landing-image.png"
   button:
     enable: true
     label: "view on GitHub"
