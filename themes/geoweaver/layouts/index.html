@@ -1,15 +1,15 @@
 {{ define "main" }}
   <!-- Banner -->
   {{ with .Params.banner }}
-    <section class="section pt-14">
+    <section class="section pt-14 grid max-w-full grid-cols-2 grid-flow-cols">
 
       <div class='absolute right-0 top-[-170px] z-[-1]' style='width: 900px; height: 800px'>
         {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "absoulte right-0" ) }}
       </div>
 
       <div class='max-w-full'>
-        <h2 class='pl-48 font-mono'>Build workflows that scale</h2>
-        <h1 class='pl-96 geoweaver-landing-text'>Geoweaver</h1>
+        <h2 class='pl-48 font-mono text-3xl'>Build workflows that scale</h2>
+        <h1 class='pl-80 geoweaver-landing-text'>Geoweaver</h1>
         <p class='max-w-3xl pt-6 pl-48 text-justify font-heebo'>An open-source, in-browser tool for simplifying data processing workflows with high-performance server support, featuring code history and workflow orchestration.</p>
 
         <div class="flex pl-48 mt-14 ml-32">
