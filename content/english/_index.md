@@ -26,7 +26,7 @@ banner:
   javaLogo: "/images/landing-page/java-logo.png"
   childPCImage: "/images/landing-page/child-pc-illus.png"
   button:
-    enable: true
+    enable: false 
     label: "view on GitHub"
     link: "https://github.com/zeon-studio/hugoplate"
 

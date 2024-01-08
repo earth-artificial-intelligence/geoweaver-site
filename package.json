@@ -3,7 +3,7 @@
   "description": "hugo tailwindcss boilerplate",
   "version": "1.10.1",
   "license": "MIT",
-  "author": "zeon.studio",
+  "author": "zsun@gmu.edu",
   "scripts": {
     "dev": "hugo server",
     "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
