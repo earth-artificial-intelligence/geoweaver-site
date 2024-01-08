@@ -38,28 +38,50 @@
   // Projects Slider
   // --------------------------------------------
   new Swiper(".project-swiper-container", {
-    spaceBetween: 24,
-    loop: true,
+    loop: false,
+    spaceBetween: 0,
     slidesPerView: 1,
     pagination: {
       el: ".project-swiper-pagination",
       clickable: true,
     }
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find all elements with the class "project-carousel"
+    var carousels = document.querySelectorAll(".project-carousel");
+
+    // Loop through each carousel element and initialize Owl Carousel
+    carousels.forEach(function (carousel) {
+      new OwlCarousel(carousel, {
+        items: 1,
+        loop: true,
+        margin: 20,
+        nav: true,
+        navText: [
+          '<i class="fa fa-chevron-left"></i>',
+          '<i class="fa fa-chevron-right"></i>',
+        ],
+        itemClass: "carousel-item",
+      });
+    });
+  });
+
+
 })();
 
-const landingPageText = "Build workflows that scale";
-let index = 0;
+// const landingPageText = "Build workflows that scale";
+// let index = 0;
 
-function typeWriter() {
-  "use strict";
-  if (index < landingPageText.length) {
-    document.getElementById("landing-page-text").innerHTML += landingPageText.charAt(index);
-    index++;
-    setTimeout(typeWriter, 50); // Adjust speed here
-  }
-}
+// function typeWriter() {
+//   "use strict";
+//   if (index < landingPageText.length) {
+//     document.getElementById("landing-page-text").innerHTML += landingPageText.charAt(index);
+//     index++;
+//     setTimeout(typeWriter, 50); // Adjust speed here
+//   }
+// }
 
-typeWriter();
+// typeWriter();
 
 

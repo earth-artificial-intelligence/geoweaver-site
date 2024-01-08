@@ -124,6 +124,12 @@ notAlternative = true
 link = "plugins/swiper/swiper-bundle.css"
 lazy = true
 [[params.plugins.css]]
+link = "plugins/owl-carousel/owl.carousel.min.css"
+lazy = true
+[[params.plugins.css]]
+link = "plugins/owl-carousel/owl.theme.default.css"
+lazy = true
+[[params.plugins.css]]
 link = "plugins/glightbox/glightbox.css"
 lazy = true
 [[params.plugins.css]]
@@ -142,6 +148,9 @@ link = "js/search.js"
 lazy = false
 [[params.plugins.js]]
 link = "plugins/swiper/swiper-bundle.js"
+lazy = false
+[[params.plugins.js]]
+link = "plugins/owl-carousel/owl.carousel.min.js"
 lazy = false
 [[params.plugins.js]]
 link = "plugins/glightbox/glightbox.js"

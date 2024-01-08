@@ -141,20 +141,73 @@
           <h1 class='font-mono pl-16 tracking-widest pt-10'>Projects</h1>
           <p class='pl-16 tracking-wide font-mono'>that already use <span class='font-bold'>Geoweaver</span></p>
 
+          <div>
+            <div class="mt-10">
+              <div class="project-carousel owl-theme">
 
-          <div class="project-swiper-container swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <!-- Add more slides as needed -->
+                <div class="carousel-item">
+                  <div class="ml-48 border-solid border-sky-400 bg-white rounded max-w-xl p-4">
+                    <p class="text-center font-bold mb-5 font-mono">SWE Wormhole</p>
+                    <p class="font-heebo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  </div>
+                </div>
+
+              </div>
             </div>
-            <div class="project-swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class='mt-20'>
+      <p class='text-4xl font-mono text-bold tracking-wide text-center'>Free, Opensource &</p>
+      <h1 class='font-mono text-bold tracking-wide text-center'>Works where you WORK</h1>
+      <p class='text-xl font-heebo tracking-widest text-center'>Download the <span class='font-bold'>APP</span></p>
+
+      <div class="mt-10 grid max-w-full grid-cols-2 grid-flow-cols">
+
+        <div class='pl-48 flex items-center flex-row'>
+          <div class="grid grid-cols-2 grid-flow-cols">
+            <div class='ml-24 mb-10 items-center justify-center flex bg-[#D4F1FF] rounded-2xl' style='width: 150px; height: 160px;'>
+              <div style='width: 60px; height: 60px'>
+                {{ partial "image" (dict "Src" .appleLogo "Alt" "apple logo" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
+              </div>
+              <div class='mt-2'>
+                <p class='text-xl text-center'>MacOS</p>
+              </div>
+            </div>
+            <div class='ml-24 items-center justify-center flex bg-[#D4FFE8] rounded-2xl' style='width: 150px; height: 160px;'>
+              <div style='width: 60px; height: 60px'>
+                {{ partial "image" (dict "Src" .windowsLogo "Alt" "windows logo" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
+              </div>
+              <div class='mt-2'>
+                <p class='text-xl text-center'>Windows</p>
+              </div>
+            </div>
+            <div class='ml-24 items-center justify-center flex bg-[#D4E2FF] rounded-2xl' style='width: 150px; height: 160px;'>
+              <div style='width: 60px; height: 60px'>
+                {{ partial "image" (dict "Src" .linuxLogo "Alt" "linux logo" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
+              </div>
+              <div class='mt-2'>
+                <p class='text-xl text-center'>Linux</p>
+              </div>
+            </div>
+            <div class='ml-24 items-center justify-center flex bg-[#FFE3D4] rounded-2xl' style='width: 150px; height: 160px;'>
+              <div style='width: 60px; height: 60px'>
+                {{ partial "image" (dict "Src" .javaLogo "Alt" "linux logo" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
+              </div>
+              <div class='mt-2'>
+                <p class='text-xl text-center'>Jar</p>
+              </div>
+            </div>
           </div>
         </div>
 
-
+        <div style='width: 400px; height: 400px'>
+          {{ partial "image" (dict "Src" .childPCImage "Alt" "child-img-illustration" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+        </div>
       </div>
+
     </section>
   {{ end }}
   <!-- /Banner -->

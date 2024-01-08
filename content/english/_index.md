@@ -20,6 +20,11 @@ banner:
   externalServerIcon: "/images/landing-page/lp-extern-ssh.png"
   webuiImage: "/images/landing-page/lp-webui.png"
   projectImage: "/images/landing-page/lp-project.png"
+  appleLogo: "/images/landing-page/apple.png"
+  windowsLogo: "/images/landing-page/windows.png"
+  linuxLogo: "/images/landing-page/linux-logo.png"
+  javaLogo: "/images/landing-page/java-logo.png"
+  childPCImage: "/images/landing-page/child-pc-illus.png"
   button:
     enable: true
     label: "view on GitHub"
