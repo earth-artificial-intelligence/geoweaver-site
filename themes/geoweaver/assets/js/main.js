@@ -34,6 +34,18 @@
       },
     },
   });
+
+  // Projects Slider
+  // --------------------------------------------
+  new Swiper(".project-swiper-container", {
+    spaceBetween: 24,
+    loop: true,
+    slidesPerView: 1,
+    pagination: {
+      el: ".project-swiper-pagination",
+      clickable: true,
+    }
+  });
 })();
 
 const landingPageText = "Build workflows that scale";
@@ -49,3 +61,5 @@ function typeWriter() {
 }
 
 typeWriter();
+
+

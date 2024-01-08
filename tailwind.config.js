@@ -32,6 +32,9 @@ module.exports = {
   safelist: [{ pattern: /^swiper-/ }],
   darkMode: "class",
   theme: {
+    letterSpacing: {
+      widest: '0.5rem'
+    },
     screens: {
       sm: "540px",
       md: "768px",

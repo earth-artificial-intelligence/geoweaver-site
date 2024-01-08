@@ -3,15 +3,158 @@
   {{ with .Params.banner }}
     <section class="section pt-14">
 
-      <div class='absolute right-0 top-[-170px] z-[-1]'>
+      <div class='absolute right-0 top-[-170px] z-[-1]' style='width: 900px; height: 800px'>
         {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "absoulte right-0" ) }}
       </div>
 
-      <h2 class='pl-48 font-mono'>Build workflows that scale</h2>
-      <h1 class='pl-96 geoweaver-landing-text'>Geoweaver</h1>
-      <p class='max-w-3xl pt-6 pl-48 text-justify font-heebo'>An open-source, in-browser tool for simplifying data processing workflows with high-performance server support, featuring code history and workflow orchestration.</p>
+      <div class='max-w-full'>
+        <h2 class='pl-48 font-mono'>Build workflows that scale</h2>
+        <h1 class='pl-96 geoweaver-landing-text'>Geoweaver</h1>
+        <p class='max-w-3xl pt-6 pl-48 text-justify font-heebo'>An open-source, in-browser tool for simplifying data processing workflows with high-performance server support, featuring code history and workflow orchestration.</p>
 
-      
+        <div class="flex pl-48 mt-14 ml-32">
+          <a href="https://github.com/your-github-repo" class="text-white no-underline">
+            <div class="mr-4 text-white bg-black rounded w-48 text-center pt-2" style="height: 40px;">
+              <div style='width: 22px; height: 22px; display: inline-block;' class='text-center mr-2'>
+                {{ partial "image" (dict "Src" .githubIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-4" "Width" "10px" "Height" "10px") }}
+              </div>
+              View on GitHub
+            </div>
+          </a>
+          <a href="https://geobrain.csiss.gmu.edu/Geoweaver/" class="text-white no-underline">
+            <div class='bg-[#337AB7] p-2 rounded text-center w-36' style="height: 40px;">
+              <div style='width: 22px; height: 22px;' class='inline-block text-center'>
+                {{ partial "image" (dict "Src" .globeIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+              </div>
+              Try demo
+            </div>
+          </a>
+        </div>
+
+
+      </div>
+    </section>
+    <section>
+      <div class='bg-[#CDF3F6] max-w-full'>
+        <div class="grid max-w-full grid-cols-[1fr,2fr] grid-flow-cols">
+          <div style="width: 500px; height: 300px;" class='ml-44'>
+            {{ partial "image" (dict "Src" .zeroToProdImage "Alt" "zero to production image" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
+          </div>
+          <div>
+            <h3 class='mt-16 font-mono'>Go From Zero To Production 🏁</h3>
+            <div class="max-w-xl pl-16 mt-6">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              </p>
+
+              <p class='font-bold pl-10 pt-10 font-heebo'>Learn more about deploying with Geoweaver</p>
+              {{/*  need to underline this  */}}
+
+              <button class='getting-started text-white p-2 rounded w-36 mt-8 mb-10 ml-32 max-w-full'>
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class='pl-48 mt-10'>
+        <h3 class='font-mono font-bold tracking-wider text-center'>Why choose Geoweaver?</h3>
+        {{/*  need to underline this  */}}
+
+        <div class='mt-5 grid grid-cols-3 grid-flow-row gap-4'>
+
+          <div class='inline-flex'>
+            <div style='width: 45px; height: 45px;'>
+              {{ partial "image" (dict "Src" .oneIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+            </div>
+            <div class='pl-10 flex flex-col text-center' style='width: 220px; height: 220px;'>
+              <div> {{ partial "image" (dict "Src" .storeIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}</div>
+              <div class='mt-2 w-56'>Safely Store all your progress along the way.</div>
+            </div>
+          </div>
+
+          <div class='inline-flex'>
+            <div style='width: 45px; height: 45px;'>
+              {{ partial "image" (dict "Src" .twoIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+            </div>
+            <div class='pl-10 flex flex-col text-center max-w-lg' style='width: 220px; height: 220px;'>
+              <div> {{ partial "image" (dict "Src" .visualiationIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}</div>
+              <div class='mt-2 w-56'>Visualise your results using the tools that you already use.</div>
+            </div>
+          </div>
+
+          <div class='inline-flex'>
+            <div style='width: 45px; height: 45px;'>
+              {{ partial "image" (dict "Src" .threeIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+            </div>
+            <div class='pl-10 flex flex-col text-center max-w-lg' style='width: 220px; height: 220px;'>
+              <div> {{ partial "image" (dict "Src" .stayOrganizedIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}</div>
+              <div class='mt-2 w-56'>Stay organised through out your research</div>
+            </div>
+          </div>
+
+          <div class='inline-flex'>
+            <div style='width: 45px; height: 45px;'>
+              {{ partial "image" (dict "Src" .fourIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+            </div>
+            <div class='pl-10 flex flex-col text-center max-w-lg' style='width: 220px; height: 220px;'>
+              <div> {{ partial "image" (dict "Src" .calendarIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}</div>
+              <div class='mt-2 w-56'>Supports CRON executions</div>
+            </div>
+          </div>
+
+          <div class='inline-flex'>
+            <div style='width: 45px; height: 45px;'>
+              {{ partial "image" (dict "Src" .fiveIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+            </div>
+            <div class='pl-10 flex flex-col text-center max-w-lg' style='width: 220px; height: 220px;'>
+              <div> {{ partial "image" (dict "Src" .externalServerIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}</div>
+              <div class='mt-2 w-56'>Seamlessly connect to external servers with SSH </div>
+            </div>
+          </div>
+
+          <div class='inline-flex'>
+            <div style='width: 45px; height: 45px;'>
+              {{ partial "image" (dict "Src" .sixIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+            </div>
+            <div class='pl-10 flex flex-col text-center max-w-lg' style='width: 220px; height: 220px;'>
+              <div> {{ partial "image" (dict "Src" .webuiImage "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}</div>
+              <div class='mt-2 w-56'>Seamlessly connect to external servers with SSH </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class='bg-[#AFF0F7] mt-28'>
+      <div class="grid max-w-full grid-cols-[1fr,2fr] grid-flow-cols">
+        <div style="width: 400px; height: 250px;" class='ml-44'>
+          {{ partial "image" (dict "Src" .projectImage "Alt" "zero to production image" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
+        </div>
+
+        <div style='height: 400px;'>
+          <h1 class='font-mono pl-16 tracking-widest pt-10'>Projects</h1>
+          <p class='pl-16 tracking-wide font-mono'>that already use <span class='font-bold'>Geoweaver</span></p>
+
+
+          <div class="project-swiper-container swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <!-- Add more slides as needed -->
+            </div>
+            <div class="project-swiper-pagination"></div>
+          </div>
+        </div>
+
+
+      </div>
     </section>
   {{ end }}
   <!-- /Banner -->
