@@ -15,12 +15,12 @@ weight = 2
 name = "Blog"
 url = "blog/"
 
-[[footer]]
-name = "Contact Us"
-url = "contact/"
-weight = 1
-
-[[footer]]
-name = "Privacy Policy"
-url = "privacy-policy/"
-weight = 2
+#[[footer]]
+#name = "Contact Us"
+#url = "contact/"
+#weight = 1
+#
+#[[footer]]
+#name = "Privacy Policy"
+#url = "privacy-policy/"
+#weight = 2
