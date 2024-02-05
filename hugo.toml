@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 # The base URL of your site (required). This will be prepended to all relative URLs.
-baseURL = "https://earth-artificial-intelligence.github.io/geoweaver-site"
+baseURL = "https://geoweaver.dev"
 # Title of your website (required).
 title = "Geoweaver"
 # Your theme name
