@@ -25,6 +25,11 @@ banner:
   linuxLogo: "/images/landing-page/linux-logo.png"
   javaLogo: "/images/landing-page/java-logo.png"
   childPCImage: "/images/landing-page/child-pc-illus.png"
+  esipLogo: "/images/landing-page/esip-logo.png"
+  nasaLogo: "/images/landing-page/nasa-logo.webp"
+  nsfLogo: "/images/landing-page/nsf-logo.png"
+  gmuLogo: "/images/landing-page/gmu-logo.png"
+  pythonLogo: "/images/landing-page/python-logo.png"
   button:
     enable: false 
     label: "view on GitHub"

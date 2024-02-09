@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddb96438-1086-4ad9-b75b-6fa357a8f678" name="Changes" comment="">
+    <list default="true" id="ddb96438-1086-4ad9-b75b-6fa357a8f678" name="Changes" comment="changed text duplication">
+      <change afterPath="$PROJECT_DIR$/assets/images/landing-page/esip-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/landing-page/gmu-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/landing-page/nasa-logo.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/landing-page/nsf-logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/english/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/english/_index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/geoweaver/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/geoweaver/layouts/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +55,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/images/landing-page" />
+      <recent name="$PROJECT_DIR$/assets/images" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.dev">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -104,7 +116,8 @@
       <workItem from="1706797097870" duration="735000" />
       <workItem from="1707020853548" duration="12000" />
       <workItem from="1707251370569" duration="779000" />
-      <workItem from="1707260094932" duration="39000" />
+      <workItem from="1707260094932" duration="2857000" />
+      <workItem from="1707449371637" duration="4236000" />
     </task>
     <task id="LOCAL-00001" summary="changes to geoweaver homepage">
       <option name="closed" value="true" />
@@ -178,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707251544180</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="changed text duplication">
+      <option name="closed" value="true" />
+      <created>1707260188683</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707260188683</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +214,7 @@
     <MESSAGE value="remove contact us, privacy policy on footer" />
     <MESSAGE value="change homepage repo link to point to geoweaver github repo" />
     <MESSAGE value="added installation blog" />
-    <option name="LAST_COMMIT_MESSAGE" value="added installation blog" />
+    <MESSAGE value="changed text duplication" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed text duplication" />
   </component>
 </project>

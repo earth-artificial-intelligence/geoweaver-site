@@ -12,7 +12,7 @@
         <h1 class='pl-80 geoweaver-landing-text'>Geoweaver</h1>
         <p class='max-w-3xl pt-6 pl-48 text-justify font-heebo'>An open-source, in-browser tool for simplifying data processing workflows with high-performance server support, featuring code history and workflow orchestration.</p>
 
-        <div class="flex pl-48 mt-14 ml-32 ">
+        <div class="flex pl-48 mt-14 ml-[38px] ">
           <a href="https://github.com/ESIPFed/Geoweaver" class="text-white no-underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             <div class="mr-4 text-white bg-black rounded w-48 text-center pt-2" style="height: 40px;">
               <div style='width: 22px; height: 22px; display: inline-block;' class='text-center mr-2'>
@@ -30,6 +30,8 @@
             </div>
           </a>
         </div>
+
+
 
 
       </div>
@@ -218,6 +220,32 @@
 
         <div style='width: 400px; height: 400px'>
           {{ partial "image" (dict "Src" .childPCImage "Alt" "child-img-illustration" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-row bg-[#F5F7BD]">
+      <div>
+        <div class="h-[350px] w-[350px] ml-20">
+          {{ partial "image" (dict "Src" .pythonLogo "Alt" "python logo" "Loading" "eager")}}
+        </div>
+      </div>
+
+      <div class="flex-grow">
+        <div class="text-center">
+          <p class="font-mono text-xl text-center justify-center pt-10">Goodness of Python 🐍, for every <a class="font-bold">WORKFLOW.</a> </p>
+          <h1 class="pt-1 font-mono tracking-wide">Pygeoweaver</h1>
+
+          <div class="flex items-center justify-center pt-5">
+            <p class="font-bold font-heebo text-center max-w-[500px]">Geoweaver can now run directly inside your Jupyter notebooks and Python scripts, empowering you to effortlessly navigate complex scientific workflows with ease.</p>
+          </div>
+
+
+          <a href="https://pygeoweaver.readthedocs.io/en/latest/">
+            <button class='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 pygeoweaver-learn-more text-white p-2 rounded w-36 mt-8 mb-10 max-w-full'>
+              Learn More
+            </button>
+          </a>
         </div>
       </div>
 
