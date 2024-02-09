@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddb96438-1086-4ad9-b75b-6fa357a8f678" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/landing-page/noaa-logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/english/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/english/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/geoweaver/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/geoweaver/layouts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/_default/params.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config/_default/params.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/geoweaver/layouts/partials/essentials/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/geoweaver/layouts/partials/essentials/footer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +112,7 @@
       <workItem from="1707020853548" duration="12000" />
       <workItem from="1707251370569" duration="779000" />
       <workItem from="1707260094932" duration="2857000" />
-      <workItem from="1707449371637" duration="5204000" />
+      <workItem from="1707449371637" duration="5507000" />
     </task>
     <task id="LOCAL-00001" summary="changes to geoweaver homepage">
       <option name="closed" value="true" />
@@ -211,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707456456132</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added supporter logos">
+      <option name="closed" value="true" />
+      <created>1707456920892</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1707456920892</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +236,7 @@
     <MESSAGE value="changed text duplication" />
     <MESSAGE value="added pygeoweaver to landing page" />
     <MESSAGE value="added python logo png" />
-    <option name="LAST_COMMIT_MESSAGE" value="added python logo png" />
+    <MESSAGE value="added supporter logos" />
+    <option name="LAST_COMMIT_MESSAGE" value="added supporter logos" />
   </component>
 </project>
