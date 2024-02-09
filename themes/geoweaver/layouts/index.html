@@ -226,7 +226,7 @@
 
     <section class="flex flex-row bg-[#F5F7BD]">
       <div>
-        <div class="h-[350px] w-[350px] ml-20">
+        <div class="h-[350px] w-[350px] ml-48">
           {{ partial "image" (dict "Src" .pythonLogo "Alt" "python logo" "Loading" "eager")}}
         </div>
       </div>
@@ -250,6 +250,33 @@
       </div>
 
     </section>
+
+
+<section>
+  <h1 class="font-mono text-center pt-10 tracking-wide">Supported By</h1>
+  <div class="flex items-center justify-center">
+    <p class="font-bold font-heebo max-w-[420px] overflow-auto text-center pt-5">We thank these institutions for generously supporting the development and maintenance of Geoweaver.</p>
+  </div>
+
+  <div class="flex justify-center space-x-4 mt-5 pb-10">
+    <div style='width: 150px; height: 150px;' class="pt-4">
+      {{ partial "image" (dict "Src" .nasaLogo "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+    </div>
+
+    <div style='width: 150px; height: 150px;'>
+      {{ partial "image" (dict "Src" .nsfLogo "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+    </div>
+
+    <div style='width: 100px; height: 100px;' class="pt-6">
+      {{ partial "image" (dict "Src" .noaaLogo "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+    </div>
+
+    <div style='width: 150px; height: 150px;' class="pt-10">
+      {{ partial "image" (dict "Src" .esipLogo "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+    </div>
+  </div>
+</section>
+
   {{ end }}
   <!-- /Banner -->
 {{ end }}

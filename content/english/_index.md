@@ -29,6 +29,7 @@ banner:
   nasaLogo: "/images/landing-page/nasa-logo.webp"
   nsfLogo: "/images/landing-page/nsf-logo.png"
   gmuLogo: "/images/landing-page/gmu-logo.png"
+  noaaLogo: "/images/landing-page/noaa-logo.png"
   pythonLogo: "/images/landing-page/python-logo.png"
   button:
     enable: false 
