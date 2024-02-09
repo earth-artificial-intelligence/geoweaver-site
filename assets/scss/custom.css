@@ -1,0 +1,44 @@
+.typewriter {
+  font-family: "Courier New", monospace;
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.typewriter .cursor {
+  display: inline-block;
+  background-color: black;
+  margin-left: -3px;
+  animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+/* Geoweaver */
+.geoweaver-landing-text {
+  background: linear-gradient(90deg, #303B4C 0%, rgba(0, 102, 255, 0.7) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: "SF Mono";
+  font-style: normal;
+}
+
+.getting-started {
+  background: rgb(255, 27, 107);
+  background: linear-gradient(230deg, rgb(255, 27, 107) 4%, rgb(255, 81, 235) 89%);
+}
+
+.pygeoweaver-learn-more {
+  background: rgb(52, 157, 156);
+  background: linear-gradient(90deg, rgb(52, 157, 156) 0%, rgb(255, 196, 0) 100%);
+}
+
+.view-on-github {
+  color: white;
+  background-color: black;
+}
+
+/*# sourceMappingURL=custom.css.map */
