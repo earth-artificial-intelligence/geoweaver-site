@@ -1,262 +1,294 @@
 {{ define "main" }}
-  <!-- Banner -->
-  {{ with .Params.banner }}
-    <section class="section pt-14 grid max-w-full grid-cols-2 grid-flow-cols">
+<!-- Banner -->
+{{ with .Params.banner }}
+<section class="section pt-14 grid max-w-full grid-cols-2 grid-flow-cols">
 
-      <div class='absolute right-0 top-[-170px] z-[-1]' style='width: 900px; height: 800px'>
-        {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "absoulte right-0" ) }}
+  <div class='absolute right-0 top-[-170px] z-[-1]' style='width: 900px; height: 800px'>
+    {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "absoulte right-0" ) }}
+  </div>
+
+  <div class='max-w-full'>
+    <h2 class='pl-48 font-mono text-3xl'>Build workflows that scale</h2>
+    <h1 class='pl-80 geoweaver-landing-text'>Geoweaver</h1>
+    <p class='max-w-3xl pt-6 pl-48 text-justify font-heebo'>An open-source, in-browser tool for simplifying data processing workflows with high-performance server support, featuring code history and workflow orchestration.</p>
+
+    <div class="flex pl-48 mt-14 ml-[38px] ">
+      <a href="https://github.com/ESIPFed/Geoweaver" class="text-white no-underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+        <div class="mr-4 text-white bg-black rounded w-48 text-center pt-2" style="height: 40px;">
+          <div style='width: 22px; height: 22px; display: inline-block;' class='text-center mr-2'>
+            {{ partial "image" (dict "Src" .githubIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-4" "Width" "10px" "Height" "10px") }}
+          </div>
+          View on GitHub
+        </div>
+      </a>
+      <a href="https://geobrain.csiss.gmu.edu/Geoweaver/" class="text-white no-underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+        <div class='bg-[#337AB7] p-2 rounded text-center w-36' style="height: 40px;">
+          <div style='width: 22px; height: 22px;' class='inline-block text-center'>
+            {{ partial "image" (dict "Src" .globeIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+          </div>
+          Try demo
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+<section>
+  <div class='bg-[#CDF3F6] max-w-full'>
+    <div class="grid max-w-full grid-cols-[1fr,2fr] grid-flow-cols">
+      <div style="width: 500px; height: 300px;" class='ml-44'>
+        {{ partial "image" (dict "Src" .zeroToProdImage "Alt" "zero to production image" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
       </div>
-
-      <div class='max-w-full'>
-        <h2 class='pl-48 font-mono text-3xl'>Build workflows that scale</h2>
-        <h1 class='pl-80 geoweaver-landing-text'>Geoweaver</h1>
-        <p class='max-w-3xl pt-6 pl-48 text-justify font-heebo'>An open-source, in-browser tool for simplifying data processing workflows with high-performance server support, featuring code history and workflow orchestration.</p>
-
-        <div class="flex pl-48 mt-14 ml-[38px] ">
-          <a href="https://github.com/ESIPFed/Geoweaver" class="text-white no-underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-            <div class="mr-4 text-white bg-black rounded w-48 text-center pt-2" style="height: 40px;">
-              <div style='width: 22px; height: 22px; display: inline-block;' class='text-center mr-2'>
-                {{ partial "image" (dict "Src" .githubIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-4" "Width" "10px" "Height" "10px") }}
-              </div>
-              View on GitHub
-            </div>
-          </a>
-          <a href="https://geobrain.csiss.gmu.edu/Geoweaver/" class="text-white no-underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-            <div class='bg-[#337AB7] p-2 rounded text-center w-36' style="height: 40px;">
-              <div style='width: 22px; height: 22px;' class='inline-block text-center'>
-                {{ partial "image" (dict "Src" .globeIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
-              </div>
-              Try demo
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class='bg-[#CDF3F6] max-w-full'>
-        <div class="grid max-w-full grid-cols-[1fr,2fr] grid-flow-cols">
-          <div style="width: 500px; height: 300px;" class='ml-44'>
-            {{ partial "image" (dict "Src" .zeroToProdImage "Alt" "zero to production image" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
-          </div>
-          <div>
-            <h3 class='mt-16 font-mono'>Go From Zero To Production 🏁</h3>
-            <div class="max-w-xl pl-16 mt-6">
-              <p>
-                Experience the power of Geoweaver, your all-in-one solution for simplifying complex scientific workflows. Whether you're a seasoned researcher or a novice, our user-friendly, web-based platform allows you to effortlessly manage data processing tasks, saving you time and preserving your workflow history. Unlock the potential of online spatial data facilities, high-performance computation platforms, and open-source libraries with Geoweaver. Get started today and go from zero to production with ease.
-              </p>
-
-              <p class='font-bold pl-10 pt-10 font-heebo'>Learn more about deploying with Geoweaver</p>
-              {{/*  need to underline this  */}}
-
-              <a href="https://esipfed.github.io/Geoweaver/docs/install.html">
-                <button class='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 getting-started text-white p-2 rounded w-36 mt-8 mb-10 ml-32 max-w-full'>
-                  Get Started
-                </button>
-              </a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class='pl-48 mt-10'>
-        <h3 class='font-mono font-bold tracking-wider text-center'>Why choose Geoweaver?</h3>
-        {{/*  need to underline this  */}}
-
-        <div class='mt-5 grid grid-cols-3 grid-flow-row gap-4'>
-
-          <div class='inline-flex'>
-            <div style='width: 45px; height: 45px;'>
-              {{ partial "image" (dict "Src" .oneIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
-            </div>
-            <div class='pl-10 flex flex-col text-center' style='width: 220px; height: 220px;'>
-              <div> {{ partial "image" (dict "Src" .storeIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}</div>
-              <div class='mt-2 w-56'>Safely Store all your progress along the way.</div>
-            </div>
-          </div>
-
-          <div class='inline-flex'>
-            <div style='width: 45px; height: 45px;'>
-              {{ partial "image" (dict "Src" .twoIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
-            </div>
-            <div class='pl-10 flex flex-col text-center max-w-lg' style='width: 220px; height: 220px;'>
-              <div> {{ partial "image" (dict "Src" .visualiationIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}</div>
-              <div class='mt-2 w-56'>Visualise your results using the tools that you already use.</div>
-            </div>
-          </div>
-
-          <div class='inline-flex'>
-            <div style='width: 45px; height: 45px;'>
-              {{ partial "image" (dict "Src" .threeIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
-            </div>
-            <div class='pl-10 flex flex-col text-center max-w-lg' style='width: 220px; height: 220px;'>
-              <div> {{ partial "image" (dict "Src" .stayOrganizedIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}</div>
-              <div class='mt-2 w-56'>Stay organised through out your research</div>
-            </div>
-          </div>
-
-          <div class='inline-flex'>
-            <div style='width: 45px; height: 45px;'>
-              {{ partial "image" (dict "Src" .fourIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
-            </div>
-            <div class='pl-10 flex flex-col text-center max-w-lg' style='width: 220px; height: 220px;'>
-              <div> {{ partial "image" (dict "Src" .calendarIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}</div>
-              <div class='mt-2 w-56'>Supports CRON executions</div>
-            </div>
-          </div>
-
-          <div class='inline-flex'>
-            <div style='width: 45px; height: 45px;'>
-              {{ partial "image" (dict "Src" .fiveIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
-            </div>
-            <div class='pl-10 flex flex-col text-center max-w-lg' style='width: 220px; height: 220px;'>
-              <div> {{ partial "image" (dict "Src" .externalServerIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}</div>
-              <div class='mt-2 w-56'>Seamlessly connect to external servers with SSH </div>
-            </div>
-          </div>
-
-          <div class='inline-flex'>
-            <div style='width: 45px; height: 45px;'>
-              {{ partial "image" (dict "Src" .sixIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
-            </div>
-            <div class='pl-10 flex flex-col text-center max-w-lg' style='width: 220px; height: 220px;'>
-              <div> {{ partial "image" (dict "Src" .webuiImage "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}</div>
-              <div class='mt-2 w-56'>In-Built Web UI with full support for Python</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class='bg-[#AFF0F7] mt-28'>
-      <div class="grid max-w-full grid-cols-[1fr,2fr] grid-flow-cols">
-        <div style="width: 400px; height: 250px;" class='ml-44'>
-          {{ partial "image" (dict "Src" .projectImage "Alt" "zero to production image" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
-        </div>
-
-        <div style='height: 400px;'>
-          <h1 class='font-mono pl-16 tracking-widest pt-10'>Projects</h1>
-          <p class='pl-16 tracking-wide font-mono'>that already use <span class='font-bold'>Geoweaver</span></p>
-
-          <div>
-            <div class="mt-10">
-              <div class="project-carousel owl-theme">
-
-                <div class="carousel-item">
-                  <div class="ml-48 border-solid border-sky-400 bg-white rounded max-w-xl p-4">
-                    <p class="text-center font-bold mb-5 font-mono">SWE Wormhole</p>
-                    <p class="font-heebo">The SWE Workflow leverages Geoweaver, to help manage the complex python & shell scripts which are used to collect training data from various sources like GridMET, SRTM 90m, Modis and AMSR which is used to train the model to predict SWE in the western US.</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class='mt-20' id="downloads-section">
-      <p class='text-4xl font-mono text-bold tracking-wide text-center'>Free, Opensource &</p>
-      <h1 class='font-mono text-bold tracking-wide text-center'>Works where you WORK</h1>
-      <p class='text-xl font-heebo tracking-widest text-center'>Download the <span class='font-bold'>APP</span></p>
-
-      <div class="mt-10 grid max-w-full grid-cols-2 grid-flow-cols">
-
-        <div class='pl-48 flex items-center flex-row'>
-          <div class="grid grid-cols-2 grid-flow-cols">
-            <a href="https://github.com/ESIPFed/Geoweaver/releases/download/latest/Geoweaver.dmg">
-              <div class='ml-24 mb-10 items-center justify-center flex bg-[#D4F1FF] rounded-2xl' style='width: 150px; height: 160px;'>
-                <div style='width: 60px; height: 60px'>
-                  {{ partial "image" (dict "Src" .appleLogo "Alt" "apple logo" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
-                </div>
-                <div class='mt-2'>
-                  <p class='text-xl text-center'>MacOS</p>
-                </div>
-              </div>
-            </a>
-
-            <a href="https://github.com/ESIPFed/Geoweaver/releases/download/latest/GeoweaverInstaller.exe">
-              <div class='ml-24 items-center justify-center flex bg-[#D4FFE8] rounded-2xl' style='width: 150px; height: 160px;'>
-                <div style='width: 60px; height: 60px'>
-                  {{ partial "image" (dict "Src" .windowsLogo "Alt" "windows logo" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
-                </div>
-                <div class='mt-2'>
-                  <p class='text-xl text-center'>Windows</p>
-                </div>
-              </div>
-            </a>
-
-            <a href="https://github.com/ESIPFed/Geoweaver/releases/download/latest/geoweaver.deb">
-              <div class='ml-24 items-center justify-center flex bg-[#D4E2FF] rounded-2xl' style='width: 150px; height: 160px;'>
-                <div style='width: 60px; height: 60px'>
-                  {{ partial "image" (dict "Src" .linuxLogo "Alt" "linux logo" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
-                </div>
-                <div class='mt-2'>
-                  <p class='text-xl text-center'>Linux</p>
-                </div>
-              </div>
-            </a>
-
-            <a href="https://github.com/ESIPFed/Geoweaver/releases/download/latest/geoweaver.jar">
-              <div class='ml-24 items-center justify-center flex bg-[#FFE3D4] rounded-2xl' style='width: 150px; height: 160px;'>
-                <div style='width: 60px; height: 60px'>
-                  {{ partial "image" (dict "Src" .javaLogo "Alt" "linux logo" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
-                </div>
-                <div class='mt-2'>
-                  <p class='text-xl text-center'>Jar</p>
-                </div>
-              </div>
-            </a>
-
-          </div>
-        </div>
-
-        <div style='width: 400px; height: 400px'>
-          {{ partial "image" (dict "Src" .childPCImage "Alt" "child-img-illustration" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
-        </div>
-      </div>
-    </section>
-
-    <section class="flex flex-row bg-[#F5F7BD]">
       <div>
-        <div class="h-[350px] w-[350px] ml-48">
-          {{ partial "image" (dict "Src" .pythonLogo "Alt" "python logo" "Loading" "eager")}}
-        </div>
-      </div>
+        <h3 class='mt-16 font-mono'>Go From Zero To Production 🏁</h3>
+        <div class="max-w-xl pl-16 mt-6">
+          <p>
+            Experience the power of Geoweaver, your all-in-one solution for simplifying complex scientific workflows. Whether you're a seasoned researcher or a novice, our user-friendly, web-based platform allows you to effortlessly manage data processing tasks, saving you time and preserving your workflow history. Unlock the potential of online spatial data facilities, high-performance computation platforms, and open-source libraries with Geoweaver. Get started today and go from zero to production with ease.
+          </p>
 
-      <div class="flex-grow">
-        <div class="text-center">
-          <p class="font-mono text-xl text-center justify-center pt-10">Goodness of Python 🐍, for every <a class="font-bold">WORKFLOW.</a> </p>
-          <h1 class="pt-1 font-mono tracking-wide">Pygeoweaver</h1>
+          <p class='font-bold pl-10 pt-10 font-heebo'>Learn more about deploying with Geoweaver</p>
+          {{/*  need to underline this  */}}
 
-          <div class="flex items-center justify-center pt-5">
-            <p class="font-bold font-heebo text-center max-w-[500px]">Geoweaver can now run directly inside your Jupyter notebooks and Python scripts, empowering you to effortlessly navigate complex scientific workflows with ease.</p>
-          </div>
-
-          <div class="flex items-center justify-center mt-4">
-            <div class="flex bg-white rounded pt-2 pb-2 pl-4 pr-4 max-w-[450px] border-2 border-[#FEC600]">
-              <div>
-                <p class="font-mono"><a class="font-bold">$ </a>pip install pygeoweaver</p>
-              </div>
-              {{ $image := resources.Get "images/landing-page/clipboard-copy-done-tick.png" }}
-              <div id="copy-install-text" class="h-[20px] w-[20px] cursor-pointer ml-5 pt-1" data-image-url="{{ $image.Permalink }}">
-                {{ partial "image" (dict "Src" .clipboardCopyIcon "Alt" "python logo" "Loading" "eager")}}
-              </div>
-            </div>
-          </div>
-
-          <a href="https://pygeoweaver.readthedocs.io/en/latest/">
-            <button class='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 pygeoweaver-learn-more text-white p-2 rounded w-36 mt-8 mb-10 max-w-full'>
-              Learn More
+          <a href="https://esipfed.github.io/Geoweaver/docs/install.html">
+            <button class='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 getting-started text-white p-2 rounded w-36 mt-8 mb-10 ml-32 max-w-full'>
+              Get Started
             </button>
           </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class='pl-48 mt-10'>
+    <h3 class='font-mono font-bold tracking-wider text-center'>Why choose Geoweaver?</h3>
+    {{/*  need to underline this  */}}
+
+    <div class='mt-5 grid grid-cols-3 grid-flow-row gap-4'>
+
+      <div class='inline-flex'>
+        <div style='width: 45px; height: 45px;'>
+          {{ partial "image" (dict "Src" .oneIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+        </div>
+        <div class='pl-10 flex flex-col text-center' style='width: 220px; height: 220px;'>
+          <div> {{ partial "image" (dict "Src" .storeIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}</div>
+          <div class='mt-2 w-56'>Safely Store all your progress along the way.</div>
         </div>
       </div>
 
-    </section>
+      <div class='inline-flex'>
+        <div style='width: 45px; height: 45px;'>
+          {{ partial "image" (dict "Src" .twoIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+        </div>
+        <div class='pl-10 flex flex-col text-center max-w-lg' style='width: 220px; height: 220px;'>
+          <div> {{ partial "image" (dict "Src" .visualiationIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}</div>
+          <div class='mt-2 w-56'>Visualise your results using the tools that you already use.</div>
+        </div>
+      </div>
+
+      <div class='inline-flex'>
+        <div style='width: 45px; height: 45px;'>
+          {{ partial "image" (dict "Src" .threeIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+        </div>
+        <div class='pl-10 flex flex-col text-center max-w-lg' style='width: 220px; height: 220px;'>
+          <div> {{ partial "image" (dict "Src" .stayOrganizedIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}</div>
+          <div class='mt-2 w-56'>Stay organised through out your research</div>
+        </div>
+      </div>
+
+      <div class='inline-flex'>
+        <div style='width: 45px; height: 45px;'>
+          {{ partial "image" (dict "Src" .fourIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+        </div>
+        <div class='pl-10 flex flex-col text-center max-w-lg' style='width: 220px; height: 220px;'>
+          <div> {{ partial "image" (dict "Src" .calendarIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}</div>
+          <div class='mt-2 w-56'>Supports CRON executions</div>
+        </div>
+      </div>
+
+      <div class='inline-flex'>
+        <div style='width: 45px; height: 45px;'>
+          {{ partial "image" (dict "Src" .fiveIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+        </div>
+        <div class='pl-10 flex flex-col text-center max-w-lg' style='width: 220px; height: 220px;'>
+          <div> {{ partial "image" (dict "Src" .externalServerIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}</div>
+          <div class='mt-2 w-56'>Seamlessly connect to external servers with SSH </div>
+        </div>
+      </div>
+
+      <div class='inline-flex'>
+        <div style='width: 45px; height: 45px;'>
+          {{ partial "image" (dict "Src" .sixIcon "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+        </div>
+        <div class='pl-10 flex flex-col text-center max-w-lg' style='width: 220px; height: 220px;'>
+          <div> {{ partial "image" (dict "Src" .webuiImage "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}</div>
+          <div class='mt-2 w-56'>In-Built Web UI with full support for Python</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class='bg-[#AFF0F7] mt-28'>
+  <div class="grid max-w-full grid-cols-[1fr,2fr] grid-flow-cols">
+    <div style="width: 400px; height: 250px;" class='ml-44'>
+      {{ partial "image" (dict "Src" .projectImage "Alt" "zero to production image" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
+    </div>
+
+    <div style='height: 400px;'>
+      <h1 class='font-mono pl-16 tracking-widest pt-10'>Projects</h1>
+      <p class='pl-16 tracking-wide font-mono'>that already use <span class='font-bold'>Geoweaver</span></p>
+
+      <div>
+        <div class="mt-10">
+          <div class="project-carousel owl-theme">
+
+            <div class="carousel-item">
+              <div class="ml-48 border-solid border-sky-400 bg-white rounded max-w-xl p-4">
+                <p class="text-center font-bold mb-5 font-mono">SWE Wormhole</p>
+                <p class="font-heebo">The SWE Workflow leverages Geoweaver, to help manage the complex python & shell scripts which are used to collect training data from various sources like GridMET, SRTM 90m, Modis and AMSR which is used to train the model to predict SWE in the western US.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class='mt-20' id="downloads-section">
+  <p class='text-4xl font-mono text-bold tracking-wide text-center'>Free, Opensource &</p>
+  <h1 class='font-mono text-bold tracking-wide text-center'>Works where you WORK</h1>
+  <p class='text-xl font-heebo tracking-widest text-center'>Download the <span class='font-bold'>APP</span></p>
+
+  <div class="mt-10 grid max-w-full grid-cols-2 grid-flow-cols">
+
+    <div class='pl-48 flex items-center flex-row'>
+      <div class="grid grid-cols-2 grid-flow-cols">
+        <a href="https://github.com/ESIPFed/Geoweaver/releases/download/latest/Geoweaver.dmg">
+          <div class='ml-24 mb-10 items-center justify-center flex bg-[#D4F1FF] rounded-2xl' style='width: 150px; height: 160px;'>
+            <div style='width: 60px; height: 60px'>
+              {{ partial "image" (dict "Src" .appleLogo "Alt" "apple logo" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
+            </div>
+            <div class='mt-2'>
+              <p class='text-xl text-center'>MacOS</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://github.com/ESIPFed/Geoweaver/releases/download/latest/GeoweaverInstaller.exe">
+          <div class='ml-24 items-center justify-center flex bg-[#D4FFE8] rounded-2xl' style='width: 150px; height: 160px;'>
+            <div style='width: 60px; height: 60px'>
+              {{ partial "image" (dict "Src" .windowsLogo "Alt" "windows logo" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
+            </div>
+            <div class='mt-2'>
+              <p class='text-xl text-center'>Windows</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://github.com/ESIPFed/Geoweaver/releases/download/latest/geoweaver.deb">
+          <div class='ml-24 items-center justify-center flex bg-[#D4E2FF] rounded-2xl' style='width: 150px; height: 160px;'>
+            <div style='width: 60px; height: 60px'>
+              {{ partial "image" (dict "Src" .linuxLogo "Alt" "linux logo" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
+            </div>
+            <div class='mt-2'>
+              <p class='text-xl text-center'>Linux</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://github.com/ESIPFed/Geoweaver/releases/download/latest/geoweaver.jar">
+          <div class='ml-24 items-center justify-center flex bg-[#FFE3D4] rounded-2xl' style='width: 150px; height: 160px;'>
+            <div style='width: 60px; height: 60px'>
+              {{ partial "image" (dict "Src" .javaLogo "Alt" "linux logo" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
+            </div>
+            <div class='mt-2'>
+              <p class='text-xl text-center'>Jar</p>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <div style='width: 400px; height: 400px'>
+      {{ partial "image" (dict "Src" .childPCImage "Alt" "child-img-illustration" "Loading" "eager" "Class" "inline-block mr-2" "Width" "10px" "Height" "10px") }}
+    </div>
+  </div>
+</section>
+
+<section class="flex flex-row bg-[#F5F7BD]">
+
+  <div class="absolute w-[250px] h-[250px] right-0 mt-[350px]">
+    {{ partial "image" (dict "Src" .catIllu "Alt" "python logo" "Loading" "eager")}}
+  </div>
+
+  <div>
+    <div class="h-[500px] w-[500px] ml-48 mt-12">
+      {{ partial "image" (dict "Src" .pythonLogo "Alt" "python logo" "Loading" "eager")}}
+    </div>
+  </div>
+
+  <div class="flex-grow">
+    <div class="text-center">
+      <p class="font-mono text-xl text-center justify-center pt-10">Goodness of Python 🐍, for every <a class="font-bold">WORKFLOW.</a> </p>
+      <h1 class="pt-1 font-mono tracking-wide">Pygeoweaver</h1>
+
+      <div class="flex items-center justify-center pt-5">
+        <p class="font-bold font-heebo text-center max-w-[500px]">Geoweaver can now run directly inside your Jupyter notebooks and Python scripts, empowering you to effortlessly navigate complex scientific workflows with ease.</p>
+      </div>
+
+
+      <div class="flex flex-col items-center justify-center mt-2 ml-[-270px]"> <!-- Adjusted margin top -->
+        <p class="font-sans italic font-bold">Install</p>
+        <div class="w-[60px] mt-[-14px]">
+          {{ partial "image" (dict "Src" .installUnderline "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "2px" "Height" "2px") }}
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center">
+        <div class="flex bg-white rounded pt-2 pb-2 pl-4 pr-4 max-w-[450px] border-2 border-[#FEC600]">
+          <div>
+            <p class="font-mono"><a class="font-bold">$ </a>pip install pygeoweaver</p>
+          </div>
+          {{ $image := resources.Get "images/landing-page/clipboard-copy-done-tick.png" }}
+          <div id="copy-install-text" class="h-[20px] w-[20px] cursor-pointer ml-5 pt-1" data-image-url="{{ $image.Permalink }}">
+            {{ partial "image" (dict "Src" .clipboardCopyIcon "Alt" "python logo" "Loading" "eager")}}
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center justify-center mt-5 ml-[-270px]"> <!-- Adjusted margin top -->
+        <p class="font-sans italic font-bold">Get Started</p>
+        <div class="w-[60px] mt-[-14px]">
+          {{ partial "image" (dict "Src" .installUnderline "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "2px" "Height" "2px") }}
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center">
+        <div class="flex bg-white rounded pt-2 pb-2 pl-4 pr-4 w-[320px] border-2 border-[#FEC600] justify-between"> <!-- Added justify-between class -->
+          <div>
+            <p class="font-mono"><a class="font-bold">$ </a>gw start</p>
+          </div>
+          {{ $image := resources.Get "images/landing-page/clipboard-copy-done-tick.png" }}
+          <div id="copy-get-started-text" class="h-[20px] w-[20px] cursor-pointer ml-5 pt-1" data-image-url="{{ $image.Permalink }}">
+            {{ partial "image" (dict "Src" .clipboardCopyIcon "Alt" "python logo" "Loading" "eager")}}
+          </div>
+        </div>
+      </div>
+
+      <a href="https://pygeoweaver.readthedocs.io/en/latest/">
+        <button class='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 pygeoweaver-learn-more text-white p-2 rounded w-36 mt-8 mb-10 max-w-full'>
+          Learn More
+        </button>
+      </a>
+    </div>
+  </div>
+
+</section>
 
 
 <section>
@@ -284,6 +316,6 @@
   </div>
 </section>
 
-  {{ end }}
-  <!-- /Banner -->
+{{ end }}
+<!-- /Banner -->
 {{ end }}
