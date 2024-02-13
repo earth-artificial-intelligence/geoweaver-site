@@ -221,13 +221,8 @@
     </section>
 
     <section class="flex flex-row bg-[#F5F7BD]">
-
-      <div class="absolute w-[250px] h-[250px] right-0 mt-[350px]">
-        {{ partial "image" (dict "Src" .catIllu "Alt" "python logo" "Loading" "eager")}}
-      </div>
-
       <div>
-        <div class="h-[500px] w-[500px] ml-48 mt-12">
+        <div class="h-[350px] w-[350px] ml-48">
           {{ partial "image" (dict "Src" .pythonLogo "Alt" "python logo" "Loading" "eager")}}
         </div>
       </div>
@@ -241,40 +236,13 @@
             <p class="font-bold font-heebo text-center max-w-[500px]">Geoweaver can now run directly inside your Jupyter notebooks and Python scripts, empowering you to effortlessly navigate complex scientific workflows with ease.</p>
           </div>
 
-
-          <div class="flex flex-col items-center justify-center mt-2 ml-[-270px]"> <!-- Adjusted margin top -->
-            <p class="font-roboto italic font-bold">Install</p>
-            <div class="w-[60px] mt-[-14px]">
-              {{ partial "image" (dict "Src" .installUnderline "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "2px" "Height" "2px") }}
-            </div>
-          </div>
-
-          <div class="flex items-center justify-center">
+          <div class="flex items-center justify-center mt-4">
             <div class="flex bg-white rounded pt-2 pb-2 pl-4 pr-4 max-w-[450px] border-2 border-[#FEC600]">
               <div>
                 <p class="font-mono"><a class="font-bold">$ </a>pip install pygeoweaver</p>
               </div>
               {{ $image := resources.Get "images/landing-page/clipboard-copy-done-tick.png" }}
               <div id="copy-install-text" class="h-[20px] w-[20px] cursor-pointer ml-5 pt-1" data-image-url="{{ $image.Permalink }}">
-                {{ partial "image" (dict "Src" .clipboardCopyIcon "Alt" "python logo" "Loading" "eager")}}
-              </div>
-            </div>
-          </div>
-
-          <div class="flex flex-col items-center justify-center mt-5 ml-[-270px]"> <!-- Adjusted margin top -->
-            <p class="font-roboto italic font-bold">Get Started</p>
-            <div class="w-[60px] mt-[-14px]">
-              {{ partial "image" (dict "Src" .installUnderline "Alt" "Demo Icon" "Loading" "eager" "Class" "inline-block mr-2" "Width" "2px" "Height" "2px") }}
-            </div>
-          </div>
-
-          <div class="flex items-center justify-center">
-            <div class="flex bg-white rounded pt-2 pb-2 pl-4 pr-4 w-[320px] border-2 border-[#FEC600] justify-between"> <!-- Added justify-between class -->
-              <div>
-                <p class="font-mono"><a class="font-bold">$ </a>gw start</p>
-              </div>
-              {{ $image := resources.Get "images/landing-page/clipboard-copy-done-tick.png" }}
-              <div id="copy-get-started-text" class="h-[20px] w-[20px] cursor-pointer ml-5 pt-1" data-image-url="{{ $image.Permalink }}">
                 {{ partial "image" (dict "Src" .clipboardCopyIcon "Alt" "python logo" "Loading" "eager")}}
               </div>
             </div>

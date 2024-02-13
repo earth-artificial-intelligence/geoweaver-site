@@ -33,9 +33,6 @@ banner:
   clipboardTickIcon: "/images/landing-page/clipboard-copy-done-tick.png"
   noaaLogo: "/images/landing-page/noaa-logo.png"
   pythonLogo: "/images/landing-page/python-logo.png"
-  catIllu: "/images/landing-page/cat_illu.png"
-  installUnderline: "/images/landing-page/underline_1_install.png"
-  
   button:
     enable: false 
     label: "view on GitHub"
