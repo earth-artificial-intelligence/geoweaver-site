@@ -1,6 +1,6 @@
 name = "Geoweaver"
 license = "MIT"
-licenselink = "https://github.com/zeon-studio/hugoplate/blob/main/LICENSE"
+licenselink = "https://github.com/ESIPFed/Geoweaver/blob/master/LICENSE"
 description = "A web system to allow users to automatically record history and manage complicated scientific workflows in web browsers involving the online spatial data facilities, high-performance computation platforms, and open-source libraries."
 homepage = "https://github.com/ESIPFed/Geoweaver"
 demosite = "https://geobrain.csiss.gmu.edu/Geoweaver"
@@ -23,9 +23,6 @@ tags = [
 features = [
   "Multi-Authors",
   "Search",
-#  "Multilingual",
-  "Dark Mode",
-#  "Taxonomies",
 ]
 
 [author]
