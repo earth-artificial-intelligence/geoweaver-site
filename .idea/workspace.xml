@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cc2bce7-caf5-4dff-bcd5-56b0f8d3f88e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/tn.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/tn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme.toml" beforeDir="false" afterPath="$PROJECT_DIR$/theme.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/og-image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/og-image.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,24 +38,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/gokulprathin/hugoplate/assets/images/landing-page&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/gokulprathin/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/gokulprathin/hugoplate/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/gokulprathin/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/images/landing-page" />
@@ -91,7 +89,7 @@
       <workItem from="1707777995285" duration="6712000" />
       <workItem from="1711417478931" duration="599000" />
       <workItem from="1712341660225" duration="1467000" />
-      <workItem from="1712351871532" duration="115000" />
+      <workItem from="1712351871532" duration="942000" />
     </task>
     <task id="LOCAL-00002" summary="added missing hugo_stats.json">
       <option name="closed" value="true" />
@@ -149,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712342498317</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix metadata image">
+      <option name="closed" value="true" />
+      <created>1712352025078</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712352025078</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +177,7 @@
     <MESSAGE value="updated github actions config" />
     <MESSAGE value="added gw start changes back" />
     <MESSAGE value="remove disqus from single page blog" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove disqus from single page blog" />
+    <MESSAGE value="fix metadata image" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix metadata image" />
   </component>
 </project>
