@@ -37,6 +37,9 @@ jobs:
         run: |
           sed -i 's/\$HUGO_GOOGLEANALYTICS/'"$HUGO_GOOGLEANALYTICS"'/g' hugo.toml
 
+      - name: Print hugo.toml
+        run: cat hugo.toml
+
       - name: Install Hugo
         run: |
           curl -LO "https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.tar.gz"
