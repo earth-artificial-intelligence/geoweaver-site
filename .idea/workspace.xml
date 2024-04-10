@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cc2bce7-caf5-4dff-bcd5-56b0f8d3f88e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/og-image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/og-image.png" beforeDir="false" />
-    </list>
+    <list default="true" id="3cc2bce7-caf5-4dff-bcd5-56b0f8d3f88e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +55,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/assets/images/landing-page" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/images" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -89,7 +90,7 @@
       <workItem from="1707777995285" duration="6712000" />
       <workItem from="1711417478931" duration="599000" />
       <workItem from="1712341660225" duration="1467000" />
-      <workItem from="1712351871532" duration="942000" />
+      <workItem from="1712351871532" duration="1810000" />
     </task>
     <task id="LOCAL-00002" summary="added missing hugo_stats.json">
       <option name="closed" value="true" />
@@ -155,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712352025078</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix metadata image">
+      <option name="closed" value="true" />
+      <created>1712353773215</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712353773215</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -20,6 +20,7 @@ env:
   NODE_VERSION: "18"
   TINA_CLIENT_ID: ${{ vars.TINA_CLIENT_ID }}
   TINA_TOKEN: ${{ vars.TINA_TOKEN }}
+  HUGO_GOOGLEANALYTICS: ${{ secrets.HUGO_GOOGLEANALYTICS }}
 
 jobs:
   # Build job
@@ -31,6 +32,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
+
+      - name: Replace Google Analytics ID
+        run: |
+          sed -i 's/\$HUGO_GOOGLEANALYTICS/'"$HUGO_GOOGLEANALYTICS"'/g' hugo.toml
 
       - name: Install Hugo
         run: |
