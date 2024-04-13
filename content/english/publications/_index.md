@@ -28,7 +28,7 @@ researchPapers:
   - title: "Geoweaver for Automating ML-based High Resolution Snow Mapping Workflow"
     chicagoCite: "Sun, Ziheng, and Nicoleta Cristea. \"Geoweaver for Automating ML-based High Resolution Snow Mapping Workflow.\" In AGU Fall Meeting Abstracts, vol. 2021, pp. IN11C-07. 2021."
     linkToManuscript: "https://ui.adsabs.harvard.edu/abs/2021AGUFMIN11C..07S/abstract"
-    authors: "Sun, Ziheng search by orcid | Cristea, Nicoleta search by orcid"
+    authors: "Sun, Ziheng | Cristea, Nicoleta search by orcid"
     type: "Research Paper"
   - title: "Deep Learning Classification for Crop Types in North Dakota"
     chicagoCite: "Sun, Ziheng, Liping Di, Hui Fang, and Annie Burgess. \"Deep learning classification for crop types in north dakota.\" IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 13 (2020): 2200-2213."
