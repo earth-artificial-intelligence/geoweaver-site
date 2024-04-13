@@ -10,24 +10,36 @@
       <hr/>
 
       <div>
-        <div class="bg-gray-50 m-5">
+        {{ range $index, $publication := .Params.researchPapers }}
+        {{ if and (eq $publication.type "Research Paper") (mod $index 2) }}
+        <div class="bg-gray-50 p-5">
+          {{ else }}
+          <div class="pl-5 pt-5">
+            {{ end }}
+            <p class="font-sans font-bold text-2xl">{{ $publication.title }}</p>
+            <p>{{ $publication.authors }}</p>
+            <p><a href="{{ $publication.linkToManuscript }}" class="text-blue-500">{{ $publication.linkToManuscript }}</a></p>
+            <p>{{$publication.type}}</p>
+          </div>
+          {{ end }}
+        </div>
+      </div>
 
+      <div class="pt-5">
+        <h4>Books</h4>
+        <hr />
 
+        <div>
 
         </div>
       </div>
-    </div>
 
-    <div class="pt-5">
-      <h4>Books</h4>
-      <hr />
-    </div>
+      <div class="pt-5">
+        <h4>Article & Resources</h4>
+        <hr />
+      </div>
 
-    <div class="pt-5">
-      <h4>Article & Resources</h4>
-      <hr />
     </div>
-
   </div>
 </section>
 
