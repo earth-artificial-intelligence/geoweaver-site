@@ -34,3 +34,12 @@ copyGetStarted.addEventListener('click', () => {
     copyGetStarted.querySelector('img').src = originalLogoSrc;
   }, 3000);
 });
+
+
+// setup for tracking downloads across different platforms
+function trackDownload(eventCategory, eventLabel) {
+  gtag('event', 'Downloads', {
+    'event_category': eventCategory,
+    'event_label': eventLabel
+  });
+}

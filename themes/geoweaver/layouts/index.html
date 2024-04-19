@@ -167,7 +167,7 @@
 
     <div class='pl-48 flex items-center flex-row'>
       <div class="grid grid-cols-2 grid-flow-cols">
-        <a href="https://github.com/ESIPFed/Geoweaver/releases/download/latest/Geoweaver.dmg">
+        <a onClick="trackDownload('dmg', 'MacOS')" href="https://github.com/ESIPFed/Geoweaver/releases/download/latest/Geoweaver.dmg">
           <div class='ml-24 mb-10 items-center justify-center flex bg-[#D4F1FF] rounded-2xl' style='width: 150px; height: 160px;'>
             <div style='width: 60px; height: 60px'>
               {{ partial "image" (dict "Src" .appleLogo "Alt" "apple logo" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
@@ -178,7 +178,7 @@
           </div>
         </a>
 
-        <a href="https://github.com/ESIPFed/Geoweaver/releases/download/latest/GeoweaverInstaller.exe">
+        <a onClick="trackDownload('exe', 'windows')" href="https://github.com/ESIPFed/Geoweaver/releases/download/latest/GeoweaverInstaller.exe">
           <div class='ml-24 items-center justify-center flex bg-[#D4FFE8] rounded-2xl' style='width: 150px; height: 160px;'>
             <div style='width: 60px; height: 60px'>
               {{ partial "image" (dict "Src" .windowsLogo "Alt" "windows logo" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
@@ -189,7 +189,7 @@
           </div>
         </a>
 
-        <a href="https://github.com/ESIPFed/Geoweaver/releases/download/latest/geoweaver.deb">
+        <a onClick="trackDownload('deb', 'linux')" href="https://github.com/ESIPFed/Geoweaver/releases/download/latest/geoweaver.deb">
           <div class='ml-24 items-center justify-center flex bg-[#D4E2FF] rounded-2xl' style='width: 150px; height: 160px;'>
             <div style='width: 60px; height: 60px'>
               {{ partial "image" (dict "Src" .linuxLogo "Alt" "linux logo" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
@@ -200,7 +200,7 @@
           </div>
         </a>
 
-        <a href="https://github.com/ESIPFed/Geoweaver/releases/download/latest/geoweaver.jar">
+        <a onClick="trackDownload('jar', 'Java')" href="https://github.com/ESIPFed/Geoweaver/releases/download/latest/geoweaver.jar">
           <div class='ml-24 items-center justify-center flex bg-[#FFE3D4] rounded-2xl' style='width: 150px; height: 160px;'>
             <div style='width: 60px; height: 60px'>
               {{ partial "image" (dict "Src" .javaLogo "Alt" "linux logo" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
