@@ -88,6 +88,8 @@ module.exports = {
         primary: [fontPrimary, fontPrimaryType],
         secondary: [fontSecondary, fontSecondaryType],
         'heebo': ['heebo', 'ui-serif', 'Georgia'],
+        'archivo': ['archivo', 'ui-serif', 'Georgia'],
+        'archivo-black': ['archivo-black', 'ui-serif', 'Georgia']
       },
     },
   },
