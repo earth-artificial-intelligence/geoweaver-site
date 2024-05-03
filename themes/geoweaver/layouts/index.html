@@ -58,10 +58,10 @@
 </section>
 
 
-<section class="z-10 bg-cover" {{ partial `bg-image.html` (dict `Src` .gridpatternImage) | safeHTMLAttr }}>
+<section class="z-10 bg-[#a1e2fc] bg-cover">
 
   <div class="grid max-w-full grid-cols-[2fr,2fr] grid-flow-cols">
-      <div style="width: 100%" class='align-middle mt-24'>
+      <div style="width: 100%" class='align-middle mt-14'>
         {{ partial "image" (dict "Src" .zeroToProdImage "Alt" "zero to production image" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
       </div>
       <div class="bg-[#a1e2fc]">
