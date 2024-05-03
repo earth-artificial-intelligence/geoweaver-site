@@ -47,7 +47,7 @@ banner:
   fileImage: "/images/brand-imgs/file.png"
   stayOrganized: "/images/brand-imgs/stay_organized.png"
   earthConnectionImg: "/images/brand-imgs/earth_connection.png"
-  webUIImage: "/images/brand-imgs/webuinew.png"
+  webUIImageNew: "/images/brand-imgs/webuinew.png"
 
   button:
     enable: false
