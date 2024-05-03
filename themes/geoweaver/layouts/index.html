@@ -3,7 +3,7 @@
 {{ with .Params.banner }}
 
 <section class="overflow-hidden bg-[#140736] section pt-14 flex justify-between max-w-full h-[28rem]">
-  <div class="w-full relative">
+  <div class="w-5/6 relative">
     {{ partial "image" (dict "Src" .geoweaverBrandLanding "Alt" "geoweaver brand logo" "Loading" "eager" "Class" "large-image w-1/2 mx-auto") }}
     <p class="capitalize pt-5 font-archivo-black text-white text-3xl text-center">Build <span class="text-[#FFB85A]">workflows</span> that <span class="underline decoration-wavy decoration-4 underline-offset-8 decoration-[#FFB85A]">scale</span></p>
     <div>
@@ -44,11 +44,11 @@
       </div>
     </div>
   </div>
-  <div class="relative justify-end">
-    <div class="absolute w-fit">
-      {{ partial "image" (dict "Src" .landingpageSideImage "Alt" "geoweaver brand logo" "Loading" "eager" "Class" "w-full h-full object-cover overflow-hidden") }}
-    </div>
+
+  <div class="absolute top-0 right-0 w-[477px] h-[440px] mt-[91px]">
+    {{ partial "image" (dict "Src" .landingpageSideImage "Alt" "geoweaver brand logo" "Loading" "eager" "Class" "w-full h-full object-cover overflow-hidden") }}
   </div>
+
 </section>
 
 <section>
@@ -60,7 +60,7 @@
 
 <section class="z-10 bg-cover" {{ partial `bg-image.html` (dict `Src` .gridpatternImage) | safeHTMLAttr }}>
 
-    <div class="grid max-w-full grid-cols-[2fr,2fr] grid-flow-cols">
+  <div class="grid max-w-full grid-cols-[2fr,2fr] grid-flow-cols">
       <div style="width: 100%" class='align-middle mt-24'>
         {{ partial "image" (dict "Src" .zeroToProdImage "Alt" "zero to production image" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
       </div>
