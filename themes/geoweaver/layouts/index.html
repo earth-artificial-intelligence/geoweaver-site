@@ -3,18 +3,19 @@
 {{ with .Params.banner }}
 
 <section class="overflow-hidden bg-[#140736] section pt-14 flex justify-between max-w-full h-[28rem]">
-  <div class="w-5/6 relative">
-    {{ partial "image" (dict "Src" .geoweaverBrandLanding "Alt" "geoweaver brand logo" "Loading" "eager" "Class" "large-image w-1/2 mx-auto") }}
+  <div class="max-sm:w-full max-md:w-full w-5/6 relative">
+    {{ partial "image" (dict "Src" .geoweaverBrandLanding "Alt" "geoweaver brand logo" "Loading" "eager" "Class" "large-image max-sm:w-full max-md:w-full w-1/2 mx-auto") }}
     <p class="capitalize pt-5 font-archivo-black text-white text-3xl text-center">Build <span class="text-[#FFB85A]">workflows</span> that <span class="underline decoration-wavy decoration-4 underline-offset-8 decoration-[#FFB85A]">scale</span></p>
     <div>
-      <p class="text-white text-center align-middle pt-8 p-0">An open-source, in-browser tool for simplifying data processing <br>
+      <p class="lg:flex max-sm:hidden justify-center text-white text-center align-middle pt-8 p-0">An open-source, in-browser tool for simplifying data processing <br>
         workflows with high-performance server support, featuring code history <br>
           and workflow orchestration.</p>
+      <p class="hidden max-md:flex text-white text-center align-middle pt-8 p-0">An open-source, in-browser tool for simplifying data processing workflows with high-performance server support, featuring code history and workflow orchestration.</p>
 
       <div class="pt-10 align-middle text-center">
 
-        <div class="flex flex-row align-center text-center justify-center">
-          <a href="https://github.com/ESIPFed/Geoweaver" class="mr-10">
+        <div class="flex flex-row align-center text-center justify-center max-sm:justify-around">
+          <a href="https://github.com/ESIPFed/Geoweaver" class="mr-10 nax-sm:ml-10">
             <div class="bg-white p-2 rounded cursor-pointer">
               <button class="text-black flex items-center ml-2 mr-2">
                 <i class="fa-brands fa-github mr-2 ml-1"></i>
@@ -32,7 +33,7 @@
             </div>
           </a>
 
-          <a href="https://geobrain.csiss.gmu.edu/Geoweaver">
+          <a href="https://geobrain.csiss.gmu.edu/Geoweaver" class="max-sm:mr-10">
             <div class="bg-white p-2 rounded cursor-pointer">
               <button class="text-black flex items-center ml-2 mr-2">
                 <i class="fa-solid fa-desktop mr-2 ml-1"></i>
@@ -45,15 +46,15 @@
     </div>
   </div>
 
-  <div class="absolute top-0 right-0 w-[477px] h-[440px] mt-[91px]">
-    {{ partial "image" (dict "Src" .landingpageSideImage "Alt" "geoweaver brand logo" "Loading" "eager" "Class" "w-full h-full object-cover overflow-hidden") }}
+  <div class="max-sm:hidden max-md:hidden  absolute top-0 right-0 w-[477px] h-[440px] mt-[91px]">
+    {{ partial "image" (dict "Src" .landingpageSideImage "Alt" "geoweaver brand logo" "Loading" "eager" "Class" "w-full h-full object-cover overflow-hidde max-sm:hidden max-md:hidden") }}
   </div>
 
 </section>
 
 <section>
   <div class="justify-center flex p-5 rounded">
-    <iframe class="rounded-xl" width="61%" height="500px" src="https://www.youtube.com/embed/6G000WADL7o?si=a0hN2gPi6DkCA0NC&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe class="rounded-xl max-sm:w-full max-md:w-full max-sm:h-[300px] max-md:h-[300px]" width="61%" height="500px" src="https://www.youtube.com/embed/6G000WADL7o?si=a0hN2gPi6DkCA0NC&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 </section>
 
