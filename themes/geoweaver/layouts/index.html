@@ -61,19 +61,19 @@
 
 <section class="z-10 bg-[#a1e2fc] bg-cover">
 
-  <div class="grid max-w-full grid-cols-[2fr,2fr] grid-flow-cols">
+  <div class="max-sm:block max-md:block grid max-w-full grid-cols-[2fr,2fr] grid-flow-cols">
       <div style="width: 100%" class='align-middle mt-16'>
         {{ partial "image" (dict "Src" .zeroToProdImage "Alt" "zero to production image" "Loading" "eager" "Class" "large-image absoulte right-0" ) }}
       </div>
       <div class="bg-[#a1e2fc]">
-        <h3 class='mt-16 pl-10 font-archivo-black'>Go From Zero To Production 🏁</h3>
-        <div class="max-w-xl pl-16 mt-6">
-          <p class="font-archivo">
+        <h3 class='max-sm:text-center max-md:text-center max-sm:w-full max-md:w-full max-sm:pl-0 max-md:pl-0 mt-16 pl-10 font-archivo-black'>Go From Zero To Production 🏁</h3>
+        <div class="max-w-xl max-sm:pl-0 max-md:pl-0 max-sm:text-center max-md:text-center pl-16 mt-6">
+          <p class="font-archivo max-sm:text-center max-md:text-center">
             Experience the power of Geoweaver, your all-in-one solution for simplifying complex scientific workflows. Whether you're a seasoned researcher or a novice, our user-friendly, web-based platform allows you to effortlessly manage data processing tasks, saving you time and preserving your workflow history. Unlock the potential of online spatial data facilities, high-performance computation platforms, and open-source libraries with Geoweaver. Get started today and go from zero to production with ease.
           </p>
-          <p class='font-bold pl-10 pt-10 font-archivo-black'>Learn more about deploying with Geoweaver</p>
+          <p class='max-sm:text-center max-md:text-center max-sm:pl-0 max-md:pl-0 font-bold pl-10 pt-10 font-archivo-black'>Learn more about deploying with Geoweaver</p>
           <a href="https://esipfed.github.io/Geoweaver/docs/install.html">
-            <button class='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 getting-started text-white p-2 rounded w-36 mt-8 mb-10 ml-32 max-w-full'>
+            <button class='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 getting-started text-white p-2 rounded w-36 mt-8 mb-10 max-sm:ml-0 max-md:ml-0   ml-32 max-w-full'>
               Get Started
             </button>
           </a>
@@ -176,7 +176,7 @@
 
       <div class="mr-10 pt-5 self-end text-end">
         <div class="flex flex-end justify-end hover:underline hover:cursor-pointer">
-          <a href="https://github.com/earth-artificial-intelligence/cmaq-geoweaver" target="_blank" class="flex">
+          <a href="https://geobrain.csiss.gmu.edu/cmaq_site/" target="_blank" class="flex">
             <p class="font-archivo-black">Ozone Prediction</p>
             <i class="fa-solid fa-arrow-up-right-from-square ml-4 mt-1"></i>
           </a>
