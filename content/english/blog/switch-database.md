@@ -22,11 +22,21 @@ Ensure PostgreSQL is installed on your system. You can download it from the [off
 
 Open the PostgreSQL shell or use a database management tool like pgAdmin. Run the following commands to create a new database and user:
 
-```sql
-CREATE DATABASE geoweaver_db;
-CREATE USER geoweaver_user WITH ENCRYPTED PASSWORD 'your_password';
-GRANT ALL PRIVILEGES ON DATABASE geoweaver_db TO geoweaver_user;
+```shell
+psql postgres
 ```
+
+```sql
+CREATE USER myuser WITH PASSWORD 'mypassword';
+CREATE DATABASE mydatabase OWNER myuser;
+```
+- To connect to the database use the below command
+
+```shell
+psql -U myuser -d mydatabase
+```
+
+
 enter \q to exit from the postgres shell
 
 ### Step 3: Create and Configure application.properties File
@@ -92,6 +102,22 @@ spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
 
 ### Step 4: Restart Geoweaver
 Restart your Geoweaver application to apply the changes. Verify the connection by checking  accessing the application.
+**Windows**
+- Find the PID (Process ID) using the specified port:
+```shell
+netstat -ano | findstr :8070
+```
+
+- Kill the process using the PID found in the previous step:
+```shell
+taskkill /PID <PID> /F
+```
+
+**Linux or Mac**
+- Kill the process using below command
+```shell
+kill -9 $(lsof -t -i:8070)
+```
 
 <hr>
 
@@ -105,6 +131,10 @@ Ensure MySQL is installed on your system. You can download it from the [official
 ### Step 2: Create a Database and User
 
 Open the MySQL shell or use a database management tool like MySQL Workbench. Run the following commands to create a new database and user:
+
+```shell
+mysql -u root -p
+```
 
 ```sql
 CREATE DATABASE geoweaver_db;
@@ -136,11 +166,11 @@ notepad application.properties
 - Add the MySQL configuration:
 
 ```text
-spring.datasource.url=jdbc:mysql://localhost:3306/geoweaver_db
-spring.datasource.username=geoweaver_user
-spring.datasource.password=your_password
+spring.datasource.url=jdbc:mysql://localhost:3306/geoweaver
+spring.datasource.username=root
+spring.datasource.password=Research-12
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 ```
 
 - Save and close the file.
@@ -164,11 +194,11 @@ nano application.properties
 - Add the MySQL configuration:
 
 ```text
-spring.datasource.url=jdbc:mysql://localhost:3306/geoweaver_db
-spring.datasource.username=geoweaver_user
-spring.datasource.password=your_password
+spring.datasource.url=jdbc:mysql://localhost:3306/geoweaver
+spring.datasource.username=root
+spring.datasource.password=Research-12
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 ```
 - Save and close the file by pressing Ctrl + O, then Enter, and exit by pressing Ctrl + X.
 
@@ -177,5 +207,23 @@ spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
 ### Step 4: Restart Geoweaver
 Restart your Geoweaver application to apply the changes. Verify the connection by checking  accessing the application.
 
+
+**Windows**
+
+- Find the PID (Process ID) using the specified port:
+```shell
+netstat -ano | findstr :8070
+```
+
+- Kill the process using the PID found in the previous step:
+```shell
+taskkill /PID <PID> /F
+```
+
+**Linux or Mac**
+- Kill the process using below command
+```shell
+kill -9 $(lsof -t -i:8070)
+```
 
 
