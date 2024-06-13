@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+
+<section>
+  <div class="container">
+
+    <h1 class="font-mono text-center pt-10 tracking-wide">FAQ</h1>
+    <div class="pt-5">
+      <h4>Common Questions</h4>
+      <hr/>
+
+
+      <div>
+        {{ range $index, $faq := .Params.faqDetails}}
+        <p class="font-bold text-xl pt-10">Q: {{.question}}</p>
+        <p>{{.answer}}</p>
+        {{ end }}
+      </div>
+</section>
+
+{{ end }}
