@@ -1,13 +1,12 @@
 {{ define "main" }}
 
-
 <section>
   <div class="container">
 
     <h1 class="font-mono text-center pt-10 tracking-wide">FAQ</h1>
     <div class="pt-5">
       <h4>Common Questions</h4>
-      <hr/>
+      <hr />
 
 
       <div>
@@ -15,6 +14,18 @@
         <p class="font-bold text-xl pt-10">Q: {{.question}}</p>
         <p>{{.answer}}</p>
         {{ end }}
+      </div>
+      <h4 class="mt-4">
+        Contact Us
+      </h4>
+      <p>If you have any issues, please fill out the form below:</p>
+
+
+      <div class="flex justify-center align-middle my-4">
+
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSexLRsyysEvvuTw_6PFVywLeWVJOG5z5_FITK9KiXX_CZcOCA/viewform?embedded=true"
+          width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
 </section>
 
