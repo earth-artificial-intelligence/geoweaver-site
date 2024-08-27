@@ -14,7 +14,7 @@ While building our Geoweaver application with the H2 database, we came across an
 </p>
 
 
-###  Understanding H2’s Deletion Mechanism**
+###  Understanding H2’s Deletion Mechanism
 
 
 When you delete rows in most databases, you might expect those rows to be immediately removed from the database file. However, H2 operates differently. Instead of instantly deleting rows, H2 simply marks them as “deleted” within its system but doesn’t actually remove them from the file. This approach means that the space these rows occupy isn’t freed up immediately, which leads to the database file continuing to grow, even as the data you’ve deleted no longer serves any purpose.
