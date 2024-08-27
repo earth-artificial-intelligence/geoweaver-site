@@ -51,7 +51,7 @@ Here’s how you can perform a compact shutdown:
 java -cp /path/to/your/downloads/h2*.jar org.h2.tools.Shell -url jdbc:h2:/home/chetana/h2/gw -user <your_username> -password <your_password>
 ```
 
-_Replace_ _/path/to/your/downloads/h2*.jar_ _with the actual path to your downloaded jar file. Substitute_ _<your_username>_ _and_ _<your_password>_ _with your H2 database credentials. If you’re using Spring Boot for your application, you can find these credentials in the_ _application.properties_ _file. For your convenience, here’s a_ [_link to application.properties file_](https://github.com/ESIPFed/Geoweaver/blob/master/src/main/resources/application.properties) _where you can locate the username and password._
+_Replace_ _/path/to/your/downloads/h2*.jar_ _with the actual path to your downloaded jar file. Substitute_ _<your_username>_ _and_ _<your_password>_ _with your H2 database credentials. You can find these credentials in the_ _application.properties_ _file. For your convenience, here’s a_ [_link to application.properties file_](https://github.com/ESIPFed/Geoweaver/blob/master/src/main/resources/application.properties) _where you can locate the username and password._
 
 3. **Execute the SHUTDOWN COMPACT Command:**
 
