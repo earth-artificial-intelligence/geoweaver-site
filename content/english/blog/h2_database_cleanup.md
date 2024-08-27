@@ -47,16 +47,18 @@ Here’s how you can perform a compact shutdown:
 •  Open your terminal or command prompt, and navigate to the directory where you downloaded the H2 jar file.
 
 •  Run the following command to open the H2 shell:
-
-    java -cp /path/to/your/downloads/h2*.jar org.h2.tools.Shell -url jdbc:h2:/home/chetana/h2/gw -user <your_username> -password <your_password>
+```sh
+java -cp /path/to/your/downloads/h2*.jar org.h2.tools.Shell -url jdbc:h2:/home/chetana/h2/gw -user <your_username> -password <your_password>
+```
 
 *Replace /path/to/your/downloads/h2*.jar with the actual path to your downloaded jar file, and substitute <your_username> and <your_password> with your H2 database credentials.*
 
 3. **Execute the SHUTDOWN COMPACT Command:**
 
 •  Once the shell is open, run the following SQL command:
-
-    SHUTDOWN COMPACT;
+```sh
+SHUTDOWN COMPACT;
+```
 •  This command will initiate the compact shutdown process, reducing the file size by permanently deleting rows that were previously marked for deletion.
 
 
