@@ -1,7 +1,7 @@
 ---
 title: "Switching Between H2, PostgreSQL, and MySQL Using Command-Line Arguments"
 meta_title: "Switching Between Databases in Geoweaver"
-date: 2024-09-16
+date: 2024-10-28
 author: "Vishesh Saluja"
 tags: ["Database", "Configuration", "PostgreSQL", "MySQL", "H2"]
 draft: false
