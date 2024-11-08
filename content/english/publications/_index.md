@@ -5,6 +5,11 @@ description: ""
 draft: false
 
 researchPapers:
+  - title: "PyGeoweaver: Tangible workflow tool for enhancing scientific research productivity and FAIRness"
+    chicagoCite: "Sun Ziheng, Gokul Prathin, Sanjana Achan. \"GPyGeoweaver: Tangible workflow tool for enhancing scientific research productivity and FAIRness.\" ScieneDirect SoftwareX 27 (2024): 101863."
+    linkToManuscript: "https://www.sciencedirect.com/science/article/pii/S2352711024002334"
+    authors: "Ziheng Sun | Gokul Prathin | Sanjana Achan"
+    type: "Research Paper"
   - title: "Geoweaver: Advanced cyberinfrastructure for managing hybrid geoscientific AI workflows"
     chicagoCite: "Sun, Ziheng, Liping Di, Annie Burgess, Jason A. Tullis, and Andrew B. Magill. \"Geoweaver: Advanced cyberinfrastructure for managing hybrid geoscientific AI workflows.\" ISPRS International Journal of Geo-Information 9, no. 2 (2020): 119."
     linkToManuscript: "https://www.mdpi.com/2220-9964/9/2/119"
