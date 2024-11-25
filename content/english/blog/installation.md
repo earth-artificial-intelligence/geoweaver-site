@@ -50,6 +50,26 @@ alias geoweaver="docker run -t -i -v <YOUR_HOME_DIRECTORY>:/home/marsvegan/ -p 8
 Open a web browser and input http://localhost:8070/Geoweaver. Geoweaver should show up shortly.
 
 
+### Updating Geoweaver  
+Keep your Geoweaver installation up-to-date with the latest features and fixes. Here's how:  
+
+##### For Geoweaver Java users  
+Download the latest JAR file from [geoweaver.dev](https://geoweaver.dev/#downloads-section) and execute the following command:  
+`java -jar geoweaver.jar`  
+
+##### For Geoweaver application users  
+Download and install the latest version for Windows, Mac, or Linux from [geoweaver.dev](https://geoweaver.dev/#downloads-section).  
+**Note**: Clear your cache if changes do not apply.  
+
+##### For Geoweaver developers  
+Pull the latest version from the repository:  
+`git pull origin main`  
+
+##### For PyGeoweaver users  
+Use the following command to update and restart:  
+`gw restart --force-download` 
+
+
 ### Set up HTTP Proxy for Geoweaver
 When deploying Geoweaver to a public server, the default port 8070 is normally blocked. To access Geoweaver, you need to set up a proxy in the HTTP server. This guide uses Apache 2.4.39. It should work for any newer version. For older versions, there might be changes. Please [Report](https://github.com/ESIPFed/Geoweaver/issues) if running into issues.
 Here is a how-to guide for Apache server:
