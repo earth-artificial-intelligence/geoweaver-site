@@ -23,7 +23,7 @@ mkdir /groups/ESS3/'USER_NAME'/geoweaver/h2/ -p
 
 
 #### **Step 2: Copy Database Files to the New Folder**
-Move the existing database files to the newly created temporary folder.
+Copy the existing database files to the newly created temporary folder.
 
 ```bash
 cp h2_hopper_amd_1/* /groups/ESS3/'USER_NAME'/geoweaver/h2/ -f
@@ -33,7 +33,8 @@ cp h2_hopper_amd_1/* /groups/ESS3/'USER_NAME'/geoweaver/h2/ -f
 Use the H2 database tool to export the data into a SQL script. This step ensures that the data is backed up in a portable format.
 
 ```bash
-java -cp h2-2.2.224.jar org.h2.tools.Script -url jdbc:h2:/groups/ESS3/'USER_NAME'/geoweaver/gw -user geoweaver -script /groups/ESS3/'user_name'/geoweaver/temp_old_gw_db_2.sql -password 'USER_PASSWORD'
+java -cp h2-2.2.224.jar org.h2.tools.Script -url jdbc:h2:/groups/ESS3/'USER_NAME'/geoweaver/gw -user geoweaver -script /groups/ESS3/'USER_NAME
+'/geoweaver/temp_old_gw_db_2.sql -password 'USER_PASSWORD'
 ```
 
 > **Note:** Replace `USER_NAME` and `USER_PASSWORD` with your actual username and  database password when running the command.
