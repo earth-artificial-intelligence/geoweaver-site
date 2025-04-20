@@ -85,9 +85,9 @@ If this is your first time using GeoWeaver, follow the steps below to set up you
 
 #### **6. Open Hopper Shell Access**
 From the OpenOnDemand dashboard, go to **Clusters > HOPPER Shell Access**.  
+![Hopper Shell Access](https://github.com/JYOSHREDDY/geoweaver-site/blob/main/assets/images/hopper_blog_imgs/hop9.png) 
+ 
 Wait for the terminal to initialize.
-
-![Hopper Shell Access](https://github.com/JYOSHREDDY/geoweaver-site/blob/main/assets/images/hopper_blog_imgs/hop9.png)  
 ![Terminal Ready](https://github.com/JYOSHREDDY/geoweaver-site/blob/main/assets/images/hopper_blog_imgs/hop16.png)
 
 ---
@@ -98,3 +98,30 @@ Run the following commands in the terminal:
 ```bash
 source ~/geo_env/bin/activate  
 gw reset_password
+```
+![Password Setup](https://github.com/JYOSHREDDY/geoweaver-site/blob/main/assets/images/hopper_blog_imgs/hop17.png) 
+
+You will be prompted to enter a password and retype it to confirm.
+![Password Retype](https://github.com/JYOSHREDDY/geoweaver-site/blob/main/assets/images/hopper_blog_imgs/hop18.png) 
+
+---
+
+#### **8. Login via GeoWeaver App**
+Go back to the GeoWeaver app. Click **Linux/Win/Mac Computeres > Localhost > Python Icon in the lower right toolbar**.
+![Login](https://github.com/JYOSHREDDY/geoweaver-site/blob/main/assets/images/hopper_blog_imgs/hop18.png) 
+
+---
+
+#### **9. Enter the Password**
+In the prompt, enter the previous password, and click **Confirm**.
+![Password gw](https://github.com/JYOSHREDDY/geoweaver-site/blob/main/assets/images/hopper_blog_imgs/hop13.png) 
+
+---
+
+#### **10. Final Check**
+If you see a list of Python environments below the toolbar, it means everything is good and ready to go! 
+![Final check](https://github.com/JYOSHREDDY/geoweaver-site/blob/main/assets/images/hopper_blog_imgs/hop14.png) 
+
+---
+####**🎉 You’re in!**
+Now you’re ready to run scripts, build workflows, and automate your research/projects with ease.
