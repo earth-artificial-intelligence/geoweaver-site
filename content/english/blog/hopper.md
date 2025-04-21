@@ -77,7 +77,7 @@ GeoWeaver will open in a new browser tab. 🎉
 
 ---
 
-### 🔐 **Steps 6–13: First-Time Password Setup**
+### 🔐 **Steps 6–10: First-Time Password Setup**
 
 If this is your first time using GeoWeaver, follow the steps below to set up your environment password.
 
@@ -123,5 +123,5 @@ If you see a list of Python environments below the toolbar, it means everything 
 ![Final check](https://github.com/JYOSHREDDY/geoweaver-site/blob/main/assets/images/hopper_blog_imgs/hop14.png) 
 
 ---
-####**🎉 You’re in!**
+#### **🎉 You’re in!**
 Now you’re ready to run scripts, build workflows, and automate your research/projects with ease.
