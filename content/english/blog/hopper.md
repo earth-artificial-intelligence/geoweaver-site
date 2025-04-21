@@ -27,7 +27,7 @@ GeoWeaver is designed to save you time by eliminating tedious tasks and simplify
 
 All **without switching between tools**.
 
-🧠 **Bonus:** GeoWeaver **automatically stores code history**, allowing easy version tracking and reproducibility of your workflows.
+**Bonus:** GeoWeaver **automatically stores code history**, allowing easy version tracking and reproducibility of your workflows.
 
 ---
 
@@ -108,7 +108,7 @@ You will be prompted to enter a password and retype it to confirm.
 
 #### **8. Login via GeoWeaver App**
 Go back to the GeoWeaver app. Click **Linux/Win/Mac Computeres > Localhost > Python Icon in the lower right toolbar**.
-![Login](https://github.com/JYOSHREDDY/geoweaver-site/blob/main/assets/images/hopper_blog_imgs/hop18.png) 
+![Login](https://github.com/JYOSHREDDY/geoweaver-site/blob/main/assets/images/hopper_blog_imgs/hop15.png) 
 
 ---
 
